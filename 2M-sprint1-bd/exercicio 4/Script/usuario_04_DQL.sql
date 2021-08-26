@@ -1,0 +1,18 @@
+USE USUARIO;
+GO
+
+SELECT * FROM USUARIO
+SELECT * FROM ARTISTA
+SELECT * FROM ALBUNS
+SELECT * FROM TIPO
+
+SELECT nomeUsuario, emailUsuario
+FROM USUARIO
+WHERE tipoUsuario = 'admin'
+
+SELECT nomeAlbum
+FROM ALBUNS
+WHERE dTLancamento > '2019-07-10'
+
+SELECT emailUsuario, senhaUsuario
+FROM USUARIO

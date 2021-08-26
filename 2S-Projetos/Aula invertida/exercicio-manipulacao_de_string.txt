@@ -1,0 +1,13 @@
+Exercício de manipulação de strings
+Uma loja pretendia ver a lista dos primeiros 5 clientes que compraram algo naquele dia, no registro já constava 
+10 clientes que compraram alguma coisa, para ter uma visão mais fácil do que eles queriam, precisavam que o nome 
+dos 5 primeiros clientes se destacasse em letra maiúscula e os 2 últimos em letra minúscula. 
+
+Clientes:
+Julia, Marcos, Gabriel, Raissa, João, Nicole, Murilo, Ana, Yan, Lucas
+
+Detalhe na tabela é preciso que de primeiro momento os nomes dos clientes sejam instanciados de forma coerente 
+com a primeira letra maiúscula (ex: Fulano).
+
+Para ajudar, faça também uma contagem de quantas letras possuem nos nomes dos clientes 
+e depois pegar as 3 primeiras letras de cada nome. Por último substitua todas letras “a” por “o“.
