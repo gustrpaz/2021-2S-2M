@@ -20,7 +20,7 @@ INNER JOIN ALUGUEL A
 ON V.idVeiculo = A.idVeiculo 
 WHERE A.idVeiculo = 2;
 
-SELECT idAluguel, nomeCliente, DataDevol, DataRetirada, nomeModelo, PLACA 
+SELECT idAluguel, nomeCliente, sobrenome, DataDevol, DataRetirada, nomeModelo, PLACA 
 FROM ALUGUEL A 
 INNER JOIN VEICULO V 
 ON A.idVeiculo = V.idVeiculo 
