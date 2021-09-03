@@ -20,7 +20,14 @@ INNER JOIN ALUGUEL A
 ON V.idVeiculo = A.idVeiculo 
 WHERE A.idVeiculo = 2;
 
-SELECT idAluguel, nomeCliente, DataDevol, DataRetirada, nomeModelo, PLACA FROM ALUGUEL A INNER JOIN VEICULO V ON A.idVeiculo = V.idVeiculo INNER JOIN MODELO M ON M.idModelo = V.idModelo INNER JOIN CLIENTE C ON C.idCliente = A.idCliente;
+SELECT idAluguel, nomeCliente, DataDevol, DataRetirada, nomeModelo, PLACA 
+FROM ALUGUEL A 
+INNER JOIN VEICULO V 
+ON A.idVeiculo = V.idVeiculo 
+INNER JOIN MODELO M 
+ON M.idModelo = V.idModelo 
+INNER JOIN CLIENTE C 
+ON C.idCliente = A.idCliente;
 
 
 SELECT idCliente, nomeCliente, sobrenome FROM CLIENTE;

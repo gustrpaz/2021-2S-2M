@@ -121,7 +121,7 @@ namespace Senai.Rental.WebApi.Repositories
 
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-                string querySelectAll = "SELECT idAluguel, nomeCliente, DataDevol, DataRetirada, nomeModelo, PLACA FROM ALUGUEL A INNER JOIN VEICULO V ON A.idVeiculo = V.idVeiculo INNER JOIN MODELO M ON M.idModelo = V.idModelo INNER JOIN CLIENTE C ON C.idCliente = A.idCliente;";
+                string querySelectAll = "SELECT idAluguel, nomeCliente, sobrenome, DataDevol, DataRetirada, nomeModelo, PLACA FROM ALUGUEL A INNER JOIN VEICULO V ON A.idVeiculo = V.idVeiculo INNER JOIN MODELO M ON M.idModelo = V.idModelo INNER JOIN CLIENTE C ON C.idCliente = A.idCliente;";
 
                 // Abre a conexão com o banco de dados, como se fosse no ssms "Conectar"
                 con.Open();
@@ -142,8 +142,9 @@ namespace Senai.Rental.WebApi.Repositories
                         // instancia um objeto aluguel do tipo AluguelDomain
                         AluguelDomain aluguel = new AluguelDomain()
                         {   //      Ordem
-                            // [1] idAluguel
-                            // [2] nomeCliente
+                            // [0] idAluguel
+                            // [1] nomeCliente
+                            // [2] sobrenome
                             // [3] DataDevol
                             // [4] DataRetirada
                             // [5] nomeModelo
@@ -151,15 +152,27 @@ namespace Senai.Rental.WebApi.Repositories
 
                             idAluguel = Convert.ToInt16(rdr[0]),
 
-                            nomeCliente
+                            cliente = new ClienteDomain()
+                            {
+                                nomeCliente = rdr[1].ToString(),
+                                sobrenome = rdr[2].ToString()
+                            },
 
-                            idVeiculo = Convert.ToInt16(rdr[1]),
-
-                            idCliente = Convert.ToInt16(rdr[2]),
+                            
 
                             DataDevol = Convert.ToDateTime(rdr[3]),
 
                             DataRetirada = Convert.ToDateTime(rdr[4]),
+
+                            modelo = new ModeloDomain()
+                            {
+                                nomeModelo = rdr[5].ToString()
+                            },
+
+                            veiculo = new VeiculoDomain()
+                            {
+                                PLACA = rdr[6].ToString()
+                            }
 
                         };
 
