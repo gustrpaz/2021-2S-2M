@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Senai\\2021-2S-2M\\2M-sprint2-backend\\01.filmes\\senai_filmes_webAPI\\senai_filmes_webAPI\\senai_filmes_webAPI.csproj": {}
+    "D:\\Senai\\2021-2S-2M\\2M-sprint2-backend\\Exercicios\\01.filmes\\senai_filmes_webAPI\\senai_filmes_webAPI\\senai_filmes_webAPI.csproj": {}
   },
   "projects": {
-    "D:\\Senai\\2021-2S-2M\\2M-sprint2-backend\\01.filmes\\senai_filmes_webAPI\\senai_filmes_webAPI\\senai_filmes_webAPI.csproj": {
+    "D:\\Senai\\2021-2S-2M\\2M-sprint2-backend\\Exercicios\\01.filmes\\senai_filmes_webAPI\\senai_filmes_webAPI\\senai_filmes_webAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Senai\\2021-2S-2M\\2M-sprint2-backend\\01.filmes\\senai_filmes_webAPI\\senai_filmes_webAPI\\senai_filmes_webAPI.csproj",
+        "projectUniqueName": "D:\\Senai\\2021-2S-2M\\2M-sprint2-backend\\Exercicios\\01.filmes\\senai_filmes_webAPI\\senai_filmes_webAPI\\senai_filmes_webAPI.csproj",
         "projectName": "senai_filmes_webAPI",
-        "projectPath": "D:\\Senai\\2021-2S-2M\\2M-sprint2-backend\\01.filmes\\senai_filmes_webAPI\\senai_filmes_webAPI\\senai_filmes_webAPI.csproj",
+        "projectPath": "D:\\Senai\\2021-2S-2M\\2M-sprint2-backend\\Exercicios\\01.filmes\\senai_filmes_webAPI\\senai_filmes_webAPI\\senai_filmes_webAPI.csproj",
         "packagesPath": "C:\\Users\\Gustavo Rezende\\.nuget\\packages\\",
-        "outputPath": "D:\\Senai\\2021-2S-2M\\2M-sprint2-backend\\01.filmes\\senai_filmes_webAPI\\senai_filmes_webAPI\\obj\\",
+        "outputPath": "D:\\Senai\\2021-2S-2M\\2M-sprint2-backend\\Exercicios\\01.filmes\\senai_filmes_webAPI\\senai_filmes_webAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gustavo Rezende\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,9 +40,21 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.2.1, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.12.2, )"
             }
           },
           "imports": [
