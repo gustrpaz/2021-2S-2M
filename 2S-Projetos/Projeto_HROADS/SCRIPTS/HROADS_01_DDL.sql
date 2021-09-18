@@ -5,22 +5,24 @@ GO
 USE SENAI_HROADS_MANHA;
 GO
 
+
 CREATE TABLE Classe(
 idClasse INT PRIMARY KEY IDENTITY (1,1),
 nomeClasse VARCHAR(25) UNIQUE NOT NULL
 );
 GO
 
-CREATE TABLE Habilidade(
-idHabilidade INT PRIMARY KEY IDENTITY (1,1),
-nomeHabilidade VARCHAR(25) UNIQUE NOT NULL
+CREATE TABLE Tipos_Habilidade (
+idTipos INT PRIMARY KEY IDENTITY(1,1),
+nomeTipo VARCHAR(12) NOT NULL
 );
 GO
 
-CREATE TABLE Tipos_Habilidade (
-idTipos INT PRIMARY KEY IDENTITY(1,1),
-idHabilidade INT FOREIGN KEY REFERENCES Habilidade(idHabilidade),
-nomeTipo VARCHAR(12) NOT NULL
+
+CREATE TABLE Habilidade(
+idHabilidade INT PRIMARY KEY IDENTITY (1,1),
+idTipos INT FOREIGN KEY REFERENCES Tipos_Habilidade(idTipos),
+nomeHabilidade VARCHAR(25) UNIQUE NOT NULL
 );
 GO
 
@@ -44,3 +46,26 @@ dataAtualizacao DATE NOT NULL
 );
 GO
 
+
+--API
+CREATE TABLE TipoUsuario(
+idTipoUsuario INT PRIMARY KEY IDENTITY(1,1),
+titulo VARCHAR (30) NOT NULL
+);
+GO
+
+
+
+
+CREATE TABLE Usuarios(
+idUsuario INT PRIMARY KEY IDENTITY(1,1),
+idTipoUsuario INT FOREIGN KEY REFERENCES TipoUsuario(idTipoUsuario),
+email VARCHAR(50) NOT NULL UNIQUE,
+senha VARCHAR(50) NOT NULL
+); 
+GO
+
+
+ALTER TABLE Classe_Habilidade
+DROP COLUMN nomeClasse, nomeHabilidade;
+GO

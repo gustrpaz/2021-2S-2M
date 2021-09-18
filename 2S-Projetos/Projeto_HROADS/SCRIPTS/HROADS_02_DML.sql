@@ -1,5 +1,6 @@
 USE SENAI_HROADS_MANHA;
 GO
+
 -- Inserir os registros conforme a descrição do texto
 
 INSERT INTO Classe(nomeClasse)
@@ -12,16 +13,16 @@ SET nomeClasse = 'Necromancer'
 WHERE nomeClasse = 'Necromante';
 GO
 
-INSERT INTO Habilidade(nomeHabilidade)
-VALUES ('Lança Mortal'), ('Escudo Supremo'), ('Recuperar Vida');
-GO
-
-INSERT INTO Tipos_Habilidade(idHabilidade, nomeTipo)
-VALUES (1, 'Ataque'), (2, 'Defesa'), (3, 'Cura');
+INSERT INTO Tipos_Habilidade(nomeTipo)
+VALUES ('Ataque'), ('Defesa'), ('Cura');
 GO
 
 INSERT INTO Tipos_Habilidade(nomeTipo)
 VALUES ('Magia');
+GO
+
+INSERT INTO Habilidade(idTipos, nomeHabilidade)
+VALUES (1, 'Lança Mortal'), (2, 'Escudo Supremo'), (3, 'Recuperar Vida');
 GO
 
 INSERT INTO Classe_Habilidade (idHabilidade, idClasse)
@@ -47,5 +48,17 @@ GO
 UPDATE Personagem
 SET nomePersonagem = 'Fer7'
 WHERE nomePersonagem = 'Fer8';
+GO
+
+
+
+
+--API
+INSERT INTO TipoUsuario (titulo)
+VALUES ('Administrador'), ('Jogador');
+GO
+
+INSERT INTO Usuarios (idTipoUsuario, email, senha)
+VALUES (1, 'adm@adm', 'administrador'), (2, 'jog@jog', 'jogador');
 GO
 
