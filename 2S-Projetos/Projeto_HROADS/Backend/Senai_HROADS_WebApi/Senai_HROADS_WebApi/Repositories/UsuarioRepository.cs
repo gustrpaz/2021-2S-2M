@@ -71,7 +71,14 @@ namespace Senai_HROADS_WebApi.Repositories
         public List<Usuario> ListarTodos()
         {
             // Retorna uma lista com todas as informações dos Usuários
-            return ctx.Usuarios.Include(u => u.IdTipoUsuarioNavigation).ToList();
+            //return ctx.Usuarios.Include(u => u.IdTipoUsuarioNavigation).ToList();
+
+            return ctx.Usuarios.Select(x => new Usuario
+             {
+                 IdTipoUsuarioNavigation = x.IdTipoUsuarioNavigation,
+                 IdUsuario= x.IdUsuario,
+                 Email = x.Email,
+             }).ToList();
         }
 
         public Usuario Login (string email, string senha) 
