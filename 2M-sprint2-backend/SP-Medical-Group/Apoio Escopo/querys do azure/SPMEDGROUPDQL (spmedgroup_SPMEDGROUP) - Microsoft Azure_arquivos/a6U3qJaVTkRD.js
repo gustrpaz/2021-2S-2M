@@ -1,0 +1,1 @@
+define("MsPortalImpl.Controls/Controls/Controls.CommandHelpers",["require","exports"],(function(){"use strict";var n;return (function(n){function i(n,i,r,u,f){var o=new t.DelegatingHandler(r,u,f),e=i.handler;e(o);n.registerForDispose((function(){o===e()&&e(null)}))}var t=MsPortalFx.ViewModels.Controls.Command;n.attachHandler=i})(n||(n={})),n}))

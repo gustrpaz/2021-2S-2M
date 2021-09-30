@@ -1,0 +1,1 @@
+define("Fx/Resources/ResourceManagement",{resourceTitleWithParts:"{0} ({1})",resourceWithNoName:"– desconhecido –"})

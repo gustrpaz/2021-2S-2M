@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Controller_SelectedScaffolderID>ApiControllerEmptyScaffolder</Controller_SelectedScaffolderID>
+    <Controller_SelectedScaffolderCategoryPath>root/Common/Api</Controller_SelectedScaffolderCategoryPath>
+    <ActiveDebugProfile>Senai_SPMedGroup_webAPI</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>D:\Senai\2021-2S-2M\2S-Projetos\SP-Medical-Group\Backend\Senai_SPMedGroup_webAPI\Senai_SPMedGroup_webAPI\Properties\PublishProfiles\senai-spmedgroup-webapi - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

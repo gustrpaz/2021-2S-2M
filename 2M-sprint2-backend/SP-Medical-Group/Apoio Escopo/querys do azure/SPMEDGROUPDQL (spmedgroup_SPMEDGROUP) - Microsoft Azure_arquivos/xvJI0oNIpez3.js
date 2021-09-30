@@ -1,0 +1,1 @@
+define("MsPortalImpl/Resources/SessionHandlerResources",{TimeoutDialog:{acceptButton:"Não sair",cancelButton:"Sair agora",description:"Você será desconectado em menos de um minuto devido à inatividade. Deseja continuar conectado?",title:"Fazendo logoff"}})
