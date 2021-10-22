@@ -28,6 +28,17 @@ namespace senai_gufi_webAPI
                     options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
                 });
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorPolicy",
+                                builder =>
+                                {
+                                    builder.WithOrigins("http://localhost:3000/tiposEventos")
+                                    .AllowAnyHeader()
+                                    .AllowAnyMethod();
+                                });
+            });
+
             // Adiciona o serviço do Swagger
             // https://docs.microsoft.com/pt-br/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio
 
@@ -79,6 +90,8 @@ namespace senai_gufi_webAPI
             });
 
             app.UseRouting();
+
+            app.UseCors("CorPolicy");
 
             app.UseAuthentication();
 
