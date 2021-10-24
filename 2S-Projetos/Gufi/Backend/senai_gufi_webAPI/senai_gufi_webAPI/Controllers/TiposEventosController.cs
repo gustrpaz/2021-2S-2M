@@ -21,9 +21,7 @@ namespace senai_gufi_webAPI.Controllers
     // Define que é um controlador de API
     [ApiController]
 
-    /// <summary>
-    /// Controller responsável pelos endpoints (URLs) referentes aos tipos de eventos
-    /// </summary>
+  
     public class TiposEventosController : ControllerBase
     {
         /// <summary>

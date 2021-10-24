@@ -69,3 +69,14 @@ create table presenca(
 
 );
 GO
+
+-- IMAGEM USUARIO
+CREATE TABLE imagemUsuario (
+	id INT PRIMARY KEY IDENTITY(1,1),
+	idUsuario INT NOT NULL UNIQUE FOREIGN KEY REFERENCES usuario(idUsuario),
+	binario VARBINARY(MAX) NOT NULL,
+	mimeType VARCHAR(30) NOT NULL,
+	nomeArquivo VARCHAR(250) NOT NULL,
+	data_inclusao DATETIME DEFAULT GETDATE() NULL
+);
+GO

@@ -7743,19 +7743,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dev.INFO\\.nuget\\packages\\": {}
+    "C:\\Users\\gustr\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dev.INFO\\Desktop\\2021-2S-2M\\2S-Projetos\\Gufi\\Backend\\senai_gufi_webAPI\\senai_gufi_webAPI\\senai_gufi_webAPI.csproj",
+      "projectUniqueName": "D:\\Senai\\2021-2S-2M\\2S-Projetos\\Gufi\\Backend\\senai_gufi_webAPI\\senai_gufi_webAPI\\senai_gufi_webAPI.csproj",
       "projectName": "senai_gufi_webAPI",
-      "projectPath": "C:\\Users\\dev.INFO\\Desktop\\2021-2S-2M\\2S-Projetos\\Gufi\\Backend\\senai_gufi_webAPI\\senai_gufi_webAPI\\senai_gufi_webAPI.csproj",
-      "packagesPath": "C:\\Users\\dev.INFO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dev.INFO\\Desktop\\2021-2S-2M\\2S-Projetos\\Gufi\\Backend\\senai_gufi_webAPI\\senai_gufi_webAPI\\obj\\",
+      "projectPath": "D:\\Senai\\2021-2S-2M\\2S-Projetos\\Gufi\\Backend\\senai_gufi_webAPI\\senai_gufi_webAPI\\senai_gufi_webAPI.csproj",
+      "packagesPath": "C:\\Users\\gustr\\.nuget\\packages\\",
+      "outputPath": "D:\\Senai\\2021-2S-2M\\2S-Projetos\\Gufi\\Backend\\senai_gufi_webAPI\\senai_gufi_webAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dev.INFO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gustr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
