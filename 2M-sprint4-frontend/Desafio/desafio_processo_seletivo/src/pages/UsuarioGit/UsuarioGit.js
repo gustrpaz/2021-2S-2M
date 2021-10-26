@@ -1,4 +1,5 @@
 import { Component } from "react";
+import './UsuarioGit.css';
 
 export default class UsuarioGit extends Component {
     constructor(props) {
@@ -36,49 +37,51 @@ export default class UsuarioGit extends Component {
     render() {
         return (
 
-            <div>
+            <div class="Body">
                 <main>
                     {/* Lista de Usuarios */}
-                    <section>
+                    <section class="Corpo">
                         <form onSubmit={this.consultarPerfil} >
-                            <div>
+                            <div class="Container_Input">
 
                                 {/**   //valor do state é o input */}
                                 <input type="text"
 
                                     id="input_user"
-                                    placeholder="nome do usuário"
+                                    placeholder=" Nome de usuário"
                                     value={this.state.nomeUsuario}
                                     onChange={this.atualizaEstadoNome}
                                 //cada vez que tiver uma mudanca, (por tecla)                                                                  
                                 />
-                                <button type="submit">Buscar</button>
+                                <button class="btn-app" type="submit">Buscar</button>
                                 {/* <button onClick={() => this.consultarPerfil(user)} >Buscar</button> */}
 
                             </div>
                         </form>
-                        <h2>Lista de Usuarios</h2>
+                        <h2>Usuário encontrado</h2>
                         <table>
                             <thead>
-                                <tr>
-                                    <th>Nome </th>
-                                    <th>Descrição</th>
-                                    <th>Id</th>
-                                    <th>Data de criação</th>
-                                    <th>Tamanho</th>
-                                </tr>
+                                <div class="box_coluna">
+                                    <tr class="colunas">
+                                        <th class="name_">Nome </th>
+                                        <th class="descricao_">Descrição</th>
+                                        <th class="id_">Id</th>
+                                        <th class="criacao_">Data de criação</th>
+                                        <th class="size_">Tamanho</th>
+                                    </tr>
+                                </div>
                             </thead>
                             <tbody>
                                 {
                                     this.state.listaUsuarios.map((user) => {
                                         //console.log(user)
                                         return (
-                                            <tr>
-                                                <td>{user.name}</td>
-                                                <td>{user.description}</td>
-                                                <td>{user.id}</td>
-                                                <td>{user.created_at}</td>
-                                                <td>{user.size}</td>
+                                            <tr class="Lista">
+                                                <td class="name">{user.name}</td>
+                                                <td class="descricao">{user.description}</td>
+                                                <td class="id">{user.id}</td>
+                                                <td class="criacao">{user.created_at}</td>
+                                                <td class="size">{user.size}</td>
                                             </tr>
                                         )
                                     })

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    height: 3000px;
+    background-color: rgb(149, 77, 200);
+    /* background-color: rgba(102, 255, 0, 0.527); */
+}
+
+.Corpo {
+    width: 1400px;
+    height: 2500px;
+    display: flex;
+    align-items: center;
+    border-radius: 1cm;
+    flex-direction: column;
+    background-color: rgb(209, 209, 209);
+}
+
+.Container_Input {
+    margin-top: 50px;
+    width: 600px;
+    display: flex;
+  
+}
+
+.colunas {
+    width: 1200px;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.Body h2 {
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+/* .box_coluna {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    background-color: maroon;
+} */
+
+.colunas th {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+/* #input_user{
+
+} */
+
+input, button {
+    font: 400 18px 'Roboto', sans-serif;
+}
+
+form input {
+    width: 100%;
+    height: 60px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+    margin: 5px 2px;
+}
+
+.btn-app {
+    width: 250px;
+    height: 60px;
+    background: #0044ff;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px 2px;
+    transition: filter 0.2s;
+}
+
+.btn-app:hover {
+    filter: brightness(90%)
+}
+
+.Lista {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.name {
+    width: 160px;
+    height: 30;
+    
+}
+
+.descricao {
+    width: 150px;
+  height: 170px;
+
+}
+
+.id {
+    width: 90px;
+    height: 20px;
+   
+}
+
+.criacao {
+    width: 214px;
+    height: 20px;
+    
+}
+
+.size {
+    width: 60px;
+    height: 20px;
+
+}
+
+
+
+.descricao_ {
+    margin-left: 66px;
+  
+}
+
+.id_ {
+    margin-left: 40px;
+ 
+}
+
+.criacao_ {
+    margin-left: 40px;
+
+}
+
