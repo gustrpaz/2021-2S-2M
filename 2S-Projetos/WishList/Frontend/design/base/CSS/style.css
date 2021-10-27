@@ -1,0 +1,178 @@
+@import url('http://fonts.cdnfonts.com/css/billabong');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200px;
+    /* background-color: aqua; */
+    margin: 0 auto;
+}
+
+
+h1{
+    font-family: 'Billabong', sans-serif;
+    font-weight: lighter;
+    font-size: 80px;
+    color: white;
+    text-shadow: -5px 1px 2px black;
+}
+
+header{
+    width: 100%;
+    height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b251ff;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fundoDiv{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 600px;
+    background-image: url(../CSS/imagens/fundoDesejos.png);
+    /* background-size:cover; */
+}
+
+.questionario{
+    width: 100%;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cadastrarDesejos{
+    margin-top: 40px;
+    height: 515px;
+    width: 865px;
+    background-color: #ffee51b7;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+.idUsuario{
+    margin-bottom: 20px;
+    width: 385px;
+    height: 52px;
+    border-style: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+}
+
+.nomeDesejo{
+    margin-bottom: 20px;
+    width: 385px;
+    height: 52px;
+    border-style: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+}
+
+.descDesejo{
+    width: 780px;
+    height: 162px;
+    padding: 12px 20px;
+    border-style: none;
+    box-sizing: border-box;
+    border-radius: 10px;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textoForm{
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.botao{
+    background-color: #B251FF;
+    margin: 17px 296px;
+    align-items: center;
+    border-radius: 10px;
+    border-style: none;
+    width: 188px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+}
+
+.mostrarDesejos{
+    width: 100vw;
+    /* height: 1500px; */
+    background-color: #b151ffa4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.mostrarDesejos h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    color: white;
+    text-shadow: 5px 1px 2px rgba(65, 65, 65, 0.822);
+    margin-bottom: 60px;
+}
+
+.caixaDesejo{
+    height: 400px;
+    width: 1196px;
+    background-color: #ffee51b7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+
+.inputDiv{
+    width: 93%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.check{
+    width: 40px;
+    height: 40px;
+}
+
+.mostrarDesejos p{
+    font-size: 30px;
+    color: rgb(66, 1, 66);
+}
+
+.descCaixa{
+    width: 1115px;
+    height: 245px;
+    border-style: none;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 12px 20px;
+    resize: none;
+}
