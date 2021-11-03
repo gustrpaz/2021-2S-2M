@@ -10,17 +10,19 @@
 
 .container{
     width: 1200px;
-    /* background-color: aqua; */
     margin: 0 auto;
 }
 
 
 h1{
-    font-family: 'Billabong', sans-serif;
+    /* Fonte e sombra antiga */
+    /* font-family: 'Billabong', sans-serif; */
+    /* text-shadow: -5px 1px 2px black; */
     font-weight: lighter;
     font-size: 80px;
     color: white;
-    text-shadow: -5px 1px 2px black;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 5px 1px 2px rgba(65, 65, 65, 0.822);
 }
 
 header{
@@ -130,7 +132,7 @@ main{
 .mostrarDesejos{
     width: 100vw;
     /* height: 1500px; */
-    background-color: #b151ffa4;
+    background-color: #b251ff;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -139,10 +141,13 @@ main{
 }
 
 .mostrarDesejos h2{
+    /* Fonte e sombra do instagram */
+   /* font-family: 'Billabong', sans-serif; */
+   /* text-shadow: -5px 1px 2px black; */
     font-family: 'Bebas Neue', cursive;
+    text-shadow: 5px 1px 2px rgba(65, 65, 65, 0.822);
     font-size: 60px;
     color: white;
-    text-shadow: 5px 1px 2px rgba(65, 65, 65, 0.822);
     margin-bottom: 60px;
 }
 
