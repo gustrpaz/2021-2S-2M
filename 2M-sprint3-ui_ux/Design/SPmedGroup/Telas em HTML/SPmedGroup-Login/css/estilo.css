@@ -105,6 +105,11 @@ main {
     justify-content: space-between;
 }
 
+.botao:hover{
+    scale: 1.1;
+    transition: all .2s ease-in-out;
+}
+
 .container_input button {
     width: 237px;
     height: 50px;
