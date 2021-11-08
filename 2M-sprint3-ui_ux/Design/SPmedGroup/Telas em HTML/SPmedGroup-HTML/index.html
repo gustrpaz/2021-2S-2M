@@ -41,12 +41,21 @@
         </nav>
     </header>
     <main>
-        <div id="home" class="banner">
+        <!-- Banners -->
+        <div id="home" class="container_banner banner mySlides fade">
             <img src="assets/maobebe.png">
             <div class="box_conteudo">
                 <h1>Welcome to spmedicalgroup</h1>
             </div>
         </div>
+
+        <div id="home" class="container_banner banner2 mySlides fade">
+            <img src="assets/medicos.png">
+            <div class="box_conteudo">
+                <h1>Welcome to spmedicalgroup</h1>
+            </div>
+        </div>
+
         <section class="container_section">
             <div class="box_consultas">
                 <div class="box_conteudo_section">
@@ -130,19 +139,34 @@
 
                 <a href="#home"><img class="logo_branca" src="assets/logo_branca.png"></a>
 
-                <div class="direitos">
-                    <span>
-                        spmedgroup todos os direitos reservados
-                    </span>
+                <div class="Copyright">
+                    <span>Copyright © 2021 - SPmedicalGroup</span>
                 </div>
             </div>
-            <div class="Copyright">
-                <span>Copyright © 2021 - SPmedicalGroup</span>
-            </div>
+           
         </div>
 
     </footer>
 
 </body>
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "flex";
+        setTimeout(carousel, 6000);
+    }
+</script>
 
 </html>

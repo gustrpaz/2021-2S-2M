@@ -151,6 +151,23 @@ header {
     font-weight: 600;
 }
 
+/* Banners */
+
+.container_banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.banner .conteudo_banner {
+    margin-right: 55px;
+}
+
+.banner2 .conteudo_banner {
+    margin-right: 55px;
+}
+
 .banner {
     align-items: center;
     justify-content: center;
@@ -159,7 +176,20 @@ header {
     height: 840px
 }
 
+.banner2 {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    height: 840px
+}
+
 .banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner2 img {
     width: 100%;
     height: 100%;
 }
@@ -185,6 +215,32 @@ header {
     text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.3);
 }
 
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .7;
+    }
+    to {
+        opacity: 5;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .7;
+    }
+    to {
+        opacity: 5;
+    }
+}
+
+/* --------------------------- */
 .container_section {
     width: 100%;
     height: 450px;
