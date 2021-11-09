@@ -23,8 +23,6 @@ header {
     background-color: #09ff00;
 }
 
-
-
 .container_header {
     width: 100%;
     height: 178px;
@@ -69,10 +67,9 @@ header {
     justify-content: space-between;
 }
 
-.redes_sociais a:hover{
+.redes_sociais a:hover {
     scale: 1.1;
     transition: all .2s ease-in-out;
-    
 }
 
 .email {
@@ -122,6 +119,9 @@ header {
     margin-top: 10px;
     margin-bottom: 2px;
 }
+.menu_header_mobile{
+    display: none;
+}
 
 .menu_header {
     height: 85px;
@@ -149,6 +149,18 @@ header {
     scale: 1.1;
     transition: all .2s ease-in-out;
     font-weight: 600;
+}
+
+.fechar {
+    display: none;
+}
+
+.fa, .fas {
+    display: none;
+}
+
+.btn_menu i {
+    display: none;
 }
 
 /* Banners */
@@ -241,6 +253,7 @@ header {
 }
 
 /* --------------------------- */
+
 .container_section {
     width: 100%;
     height: 450px;
@@ -273,16 +286,15 @@ header {
     flex-direction: column;
     background: rgba(255, 255, 255, 0.88);
     border-radius: 11px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.box1:hover{
+.box1:hover {
     scale: 1.1;
     transition: all .2s ease-in-out;
-  
 }
 
-.box2:hover{
+.box2:hover {
     scale: 1.1;
     transition: all .2s ease-in-out;
 }
@@ -306,7 +318,7 @@ header {
     justify-content: center;
     background: rgba(255, 255, 255, 0.88);
     border-radius: 11px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .box_conteudo_section a {
@@ -384,8 +396,7 @@ header {
     border-radius: 10px;
 }
 
-
-.caixas_especialidade:hover{
+.caixas_especialidade:hover {
     scale: 1.1;
     transition: all .2s ease-in-out;
 }
@@ -424,6 +435,11 @@ header {
     width: 100%;
     height: 100%;
 }
+
+/* -------------------------------------- */
+
+/*  
+/* Parte de Sobre o Projeto */
 
 .quem_somos {
     width: 100%;
@@ -470,6 +486,11 @@ header {
     color: #FFFFFF;
     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.36);
 }
+
+/* -------------------------------------- */
+
+/*  
+     /* Rodapé/Footer */
 
 footer {
     width: 100%;
@@ -518,12 +539,6 @@ ul.none {
     list-style-type: none;
 }
 
-.logo_branca {
-    /* width: 276px;
-    height: 88px;
-    margin-left: 244px; */
-}
-
 .direitos {
     width: 371px;
     height: 97px;
@@ -558,3 +573,211 @@ ul.none {
     line-height: 44px;
     color: #FFFFFF;
 }
+
+@media(min-width: 600px) {
+    .container {
+        width: 80vw;
+        margin: 0px;
+    }
+    .first_nav {
+        display: none;
+    }
+    .logo_site {
+        display: none;
+    }
+    .container_header {
+        width: 600px;
+        height: 178.78px;
+        display: flex;
+        align-items: center;
+        background: #008BDA;
+    }
+    .menu_header_mobile {
+        width: 461px;
+        height: 178px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu_header {
+        display: none;
+        height: 300px;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: unset;
+        position: absolute;
+        flex-direction: column;
+        padding-left: 10vw;
+        right: 0;
+        top: 128px;
+        background-color: black;
+    }
+    .fa, .fas {
+        font-weight: 900;
+        color: white;
+        font-size: 30px;
+        margin-right: 43px;
+    }
+    .btn_menu i {
+        display: inline-block;
+        color: white;
+        font-size: 42px;
+    }
+}
+
+
+@media(min-width: 992px) {
+    header {
+        height: 178px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        background-color: #09ff00;
+    }
+    
+    .container_header {
+        width: 100%;
+        height: 178px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        background-color: #FFFFFF;
+    }
+    
+    .first_nav {
+        width: 100%;
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        background-color: #333747;
+    }
+    
+    .container_first {
+        width: 1200px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .box_email {
+        width: 365px;
+        display: flex;
+        align-items: center;
+        /* background-color: rgb(255, 0, 0); */
+    }
+    
+    .box_email a {
+        margin-left: 8px;
+    }
+    
+    .redes_sociais {
+        width: 154px;
+        height: 39px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .redes_sociais a:hover {
+        scale: 1.1;
+        transition: all .2s ease-in-out;
+    }
+    
+    .email {
+        width: 28px;
+        height: 28px;
+        padding: 2px;
+    }
+    
+    .twitter {
+        width: 28px;
+        height: 28px;
+        padding: 2px;
+    }
+    
+    .instagram {
+        width: 28px;
+        height: 28px;
+        padding: 2px;
+    }
+    
+    .youtube {
+        width: 28px;
+        height: 28px;
+        padding: 2px;
+    }
+    
+    .first_nav span {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+    
+    .first_nav a {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    
+    .logo_site {
+        margin-top: 10px;
+        margin-bottom: 2px;
+    }
+    .menu_header_mobile{
+        display: none;
+    }
+    
+    .menu_header {
+        height: 85px;
+        width: 1200px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #008BDA;
+    }
+    
+    .menu_header a {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 23px;
+        line-height: 43px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    
+    .menu_header a:hover {
+        /* color: rgb(255, 238, 4); */
+        scale: 1.1;
+        transition: all .2s ease-in-out;
+        font-weight: 600;
+    }
+    
+    .fechar {
+        display: none;
+    }
+    
+    .fa, .fas {
+        display: none;
+    }
+    
+    .btn_menu i {
+        display: none;
+    }
+    
+}
+
+/* @media(min-width: 768px){}
+@media(min-width: 1366px) {}
+@media(min-width: 1920px) {}  */

@@ -20,22 +20,30 @@
                         <a href="mailto:grezendepaz@gmail.com">grezendepaz@gmail.com</a>
                     </div>
                     <div class="redes_sociais">
-                        <a href="mailto:grezendepaz@gmail.com"><img class="email" src="assets/email.png"></a>
-                        <a href="https://twitter.com/Guhrezendin"><img class="twitter" src="assets/twitter.png"></a>
+                        <a href="mailto:grezendepaz@gmail.com"><img class="email" src="assets/email.png" alt="email"></a>
+                        <a href="https://twitter.com/Guhrezendin"><img class="twitter" src="assets/twitter.png" alt="twitter"></a>
                         <a href="https://www.instagram.com/slv.rezende/"><img class="instagram"
-                                src="assets/instagram.png"></a>
+                                src="assets/instagram.png" alt="instagram"></a>
                         <a href="https://www.youtube.com/channel/UCcPa9DHu3VKhiV9RQLXLhjw"> <img class="youtube"
-                                src="assets/youtube.png"></a>
+                                src="assets/youtube.png" alt="youtube"></a>
                     </div>
                 </div>
             </div>
-            <a href="#home"><img class="logo_site" src="assets/medgroup-hori.png"></a>
+            <div class="menu_header_mobile">
+
+                <a class="btn_menu" href="#" onclick="BotaoDoMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="#home"><img class="logo_site" src="assets/medgroup-hori.png" alt="logo do site"></a>
+                <a href="home"><img class="logo_branca_mobile" src="assets/logo_branca.png" alt="logo site branco"></a>
+            </div>
             <div>
                 <nav id="links" class="menu_header">
                     <a href="#home">Home</a>
                     <a href="">Agendamento</a>
                     <a href="#quemsomos">Quem somos</a>
                     <a href="">Login</a>
+                    <a class="fechar" href="#" onclick="BotaoDoMenu()">Fechar</a>
             </div>
         </div>
         </nav>
@@ -43,14 +51,14 @@
     <main>
         <!-- Banners -->
         <div id="home" class="container_banner banner mySlides fade">
-            <img src="assets/maobebe.png">
+            <img src="assets/maobebe.png" alt="plano de fundo bebê">
             <div class="box_conteudo">
                 <h1>Welcome to spmedicalgroup</h1>
             </div>
         </div>
 
         <div id="home" class="container_banner banner2 mySlides fade">
-            <img src="assets/medicos.png">
+            <img src="assets/medicos.png" alt="plano de fundo médicos">
             <div class="box_conteudo">
                 <h1>Welcome to spmedicalgroup</h1>
             </div>
@@ -108,7 +116,7 @@
 
         <section class="quem_somos">
             <div class="img_quemSomos">
-                <img src="./assets/undraw_medicine_b1ol.svg">
+                <img src="./assets/undraw_medicine_b1ol.svg" alt="desenho médico">
             </div>
             <div class="txt_quemSomos">
                 <h1>Quem somos</h1>
@@ -137,7 +145,7 @@
                     </ul>
                 </div>
 
-                <a href="#home"><img class="logo_branca" src="assets/logo_branca.png"></a>
+                <a href="#home"><img class="logo_branca" src="assets/logo_branca.png" alt="logo do site"></a>
 
                 <div class="Copyright">
                     <span>Copyright © 2021 - SPmedicalGroup</span>
@@ -167,6 +175,17 @@
         x[myIndex - 1].style.display = "flex";
         setTimeout(carousel, 6000);
     }
+
+    function BotaoDoMenu() {
+            var menu = document.getElementById("links");
+            if (menu.style.display == "flex") {
+                // Esconda o menu 
+                menu.style.display = "none";
+            } else {
+                //Mostre o menu
+                menu.style.display = "flex"
+            }
+        }
 </script>
 
 </html>
