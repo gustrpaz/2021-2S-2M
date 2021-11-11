@@ -7,6 +7,10 @@ import twitter from '../../assets/img/twitter.png'
 import instagram from '../../assets/img/instagram.png'
 import youtube from '../../assets/img/youtube.png'
 
+import { Link } from 'react-router-dom';
+import UsuarioAutenticado from '../funcao login/funcao'
+
+
 export default function Header() {
 
     return(
@@ -42,7 +46,7 @@ export default function Header() {
                             <a href="#home">Home</a>
                             <a href="">Agendamento</a>
                             <a href="#quemsomos">Quem somos</a>
-                            <a href="">Login</a>
+                            <UsuarioAutenticado />
                             <a className="fechar" href="#" onclick="BotaoDoMenu()">Fechar</a>
                         </nav>
                     </div>

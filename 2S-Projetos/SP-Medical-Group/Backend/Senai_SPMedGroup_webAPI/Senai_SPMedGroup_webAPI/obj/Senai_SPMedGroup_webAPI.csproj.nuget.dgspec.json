@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Senai\\2021-2S-2M\\2S-Projetos\\SP-Medical-Group\\Backend\\Senai_SPMedGroup_webAPI\\Senai_SPMedGroup_webAPI\\Senai_SPMedGroup_webAPI.csproj": {}
+    "C:\\Users\\46849723804\\Desktop\\2021-2S-2M\\2S-Projetos\\SP-Medical-Group\\Backend\\Senai_SPMedGroup_webAPI\\Senai_SPMedGroup_webAPI\\Senai_SPMedGroup_webAPI.csproj": {}
   },
   "projects": {
-    "D:\\Senai\\2021-2S-2M\\2S-Projetos\\SP-Medical-Group\\Backend\\Senai_SPMedGroup_webAPI\\Senai_SPMedGroup_webAPI\\Senai_SPMedGroup_webAPI.csproj": {
+    "C:\\Users\\46849723804\\Desktop\\2021-2S-2M\\2S-Projetos\\SP-Medical-Group\\Backend\\Senai_SPMedGroup_webAPI\\Senai_SPMedGroup_webAPI\\Senai_SPMedGroup_webAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Senai\\2021-2S-2M\\2S-Projetos\\SP-Medical-Group\\Backend\\Senai_SPMedGroup_webAPI\\Senai_SPMedGroup_webAPI\\Senai_SPMedGroup_webAPI.csproj",
+        "projectUniqueName": "C:\\Users\\46849723804\\Desktop\\2021-2S-2M\\2S-Projetos\\SP-Medical-Group\\Backend\\Senai_SPMedGroup_webAPI\\Senai_SPMedGroup_webAPI\\Senai_SPMedGroup_webAPI.csproj",
         "projectName": "Senai_SPMedGroup_webAPI",
-        "projectPath": "D:\\Senai\\2021-2S-2M\\2S-Projetos\\SP-Medical-Group\\Backend\\Senai_SPMedGroup_webAPI\\Senai_SPMedGroup_webAPI\\Senai_SPMedGroup_webAPI.csproj",
-        "packagesPath": "C:\\Users\\gustr\\.nuget\\packages\\",
-        "outputPath": "D:\\Senai\\2021-2S-2M\\2S-Projetos\\SP-Medical-Group\\Backend\\Senai_SPMedGroup_webAPI\\Senai_SPMedGroup_webAPI\\obj\\",
+        "projectPath": "C:\\Users\\46849723804\\Desktop\\2021-2S-2M\\2S-Projetos\\SP-Medical-Group\\Backend\\Senai_SPMedGroup_webAPI\\Senai_SPMedGroup_webAPI\\Senai_SPMedGroup_webAPI.csproj",
+        "packagesPath": "C:\\Users\\46849723804\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\46849723804\\Desktop\\2021-2S-2M\\2S-Projetos\\SP-Medical-Group\\Backend\\Senai_SPMedGroup_webAPI\\Senai_SPMedGroup_webAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gustr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\46849723804\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -47,6 +47,10 @@
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -93,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

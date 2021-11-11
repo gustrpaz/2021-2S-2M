@@ -43,7 +43,6 @@ export default function Home() {
 
           <div>
                <Header/>
-
                <main>
 
                     <div id="home" className="container_banner banner mySlides fade">

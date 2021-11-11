@@ -63,10 +63,10 @@ namespace Senai_SPMedGroup_webAPI
 
             services.AddCors(options =>
             {
-                options.AddPolicy("CorPolicy",
+                options.AddPolicy("CorsPolicy",
                                 builder =>
                                 {
-                                    builder.WithOrigins("http://localhost:3000/%22")
+                                    builder.WithOrigins("http://localhost:3000")
                                     .AllowAnyHeader()
                                     .AllowAnyMethod();
                                 });
@@ -94,7 +94,7 @@ namespace Senai_SPMedGroup_webAPI
 
             app.UseAuthorization();
 
-            app.UseCors("CorPolicy");
+            app.UseCors("CorsPolicy");
 
             app.UseEndpoints(endpoints =>
             {

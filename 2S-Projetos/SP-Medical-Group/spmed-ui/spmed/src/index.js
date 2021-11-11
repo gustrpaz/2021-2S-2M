@@ -12,6 +12,7 @@ import {
 
 import Home from './pages/home/Home';
 import Login from './pages/login/login'
+import NotFound from './pages/notFound/notFound'
 
 import './index.css';
 // ReactDOM.render(

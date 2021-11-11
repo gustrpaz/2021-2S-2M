@@ -144,6 +144,17 @@ header {
     color: #FFFFFF;
 }
 
+.logout{
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 43px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
 .menu_header a:hover {
     /* color: rgb(255, 238, 4); */
     scale: 1.1;

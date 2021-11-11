@@ -110,6 +110,7 @@ mimeType varchar (80) NOT NULL,
 nomeArquivo varchar (250) NOT NULL,
 data_inclusao datetime default getdate() NOT NULL,
 );
+GO
 
 
 ALTER TABLE consultas 
