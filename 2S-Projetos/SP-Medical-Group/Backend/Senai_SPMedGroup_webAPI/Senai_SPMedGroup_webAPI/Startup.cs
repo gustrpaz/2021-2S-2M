@@ -60,6 +60,18 @@ namespace Senai_SPMedGroup_webAPI
                         ValidAudience = "SpMedGroup.webAPI"
                     };
                 });
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorPolicy",
+                                builder =>
+                                {
+                                    builder.WithOrigins("http://localhost:3000/%22")
+                                    .AllowAnyHeader()
+                                    .AllowAnyMethod();
+                                });
+            });
+
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -81,6 +93,8 @@ namespace Senai_SPMedGroup_webAPI
             app.UseAuthentication();
 
             app.UseAuthorization();
+
+            app.UseCors("CorPolicy");
 
             app.UseEndpoints(endpoints =>
             {

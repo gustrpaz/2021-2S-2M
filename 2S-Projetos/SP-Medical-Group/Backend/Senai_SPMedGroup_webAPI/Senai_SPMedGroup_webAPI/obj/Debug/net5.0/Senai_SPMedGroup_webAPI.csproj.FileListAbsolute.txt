@@ -66,7 +66,6 @@ D:\Senai\2021-2S-2M\2S-Projetos\SP-Medical-Group\Backend\Senai_SPMedGroup_webAPI
 D:\Senai\2021-2S-2M\2S-Projetos\SP-Medical-Group\Backend\Senai_SPMedGroup_webAPI\Senai_SPMedGroup_webAPI\obj\Debug\net5.0\staticwebassets\Senai_SPMedGroup_webAPI.StaticWebAssets.xml
 D:\Senai\2021-2S-2M\2S-Projetos\SP-Medical-Group\Backend\Senai_SPMedGroup_webAPI\Senai_SPMedGroup_webAPI\obj\Debug\net5.0\scopedcss\bundle\Senai_SPMedGroup_webAPI.styles.css
 D:\Senai\2021-2S-2M\2S-Projetos\SP-Medical-Group\Backend\Senai_SPMedGroup_webAPI\Senai_SPMedGroup_webAPI\obj\Debug\net5.0\Senai_SPMedGroup_webAPI.RazorTargetAssemblyInfo.cache
-D:\Senai\2021-2S-2M\2S-Projetos\SP-Medical-Group\Backend\Senai_SPMedGroup_webAPI\Senai_SPMedGroup_webAPI\obj\Debug\net5.0\Senai_SPMedGroup_webAPI.csproj.CopyComplete
 D:\Senai\2021-2S-2M\2S-Projetos\SP-Medical-Group\Backend\Senai_SPMedGroup_webAPI\Senai_SPMedGroup_webAPI\obj\Debug\net5.0\Senai_SPMedGroup_webAPI.dll
 D:\Senai\2021-2S-2M\2S-Projetos\SP-Medical-Group\Backend\Senai_SPMedGroup_webAPI\Senai_SPMedGroup_webAPI\obj\Debug\net5.0\ref\Senai_SPMedGroup_webAPI.dll
 D:\Senai\2021-2S-2M\2S-Projetos\SP-Medical-Group\Backend\Senai_SPMedGroup_webAPI\Senai_SPMedGroup_webAPI\obj\Debug\net5.0\Senai_SPMedGroup_webAPI.pdb
