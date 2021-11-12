@@ -64,7 +64,45 @@ namespace Senai_SPMedGroup_webAPI.Repositories
         public List<Consulta> ListarTodos()
         {
             // Retorna uma lista com todas as informações da Consulta
-            return ctx.Consultas.ToList();
+
+            //return ctx.Consultas.ToList();
+
+                return ctx.Consultas.Select(x => new Consulta
+                {
+
+                    IdPaciente = x.IdPaciente,
+                    IdMedico = x.IdMedico,
+                    IdSituacao = x.IdSituacao,
+                    Descricao = x.Descricao,
+
+                   IdSituacaoNavigation = new Situacao()
+                   {
+                      Situacao1 = x.IdSituacaoNavigation.Situacao1
+                   },
+
+                    IdMedicoNavigation = new Medico()
+                    {
+                        Crm = x.IdMedicoNavigation.Crm,
+                        NomeMedico = x.IdMedicoNavigation.NomeMedico,
+
+                        IdClinicaNavigation = new Clinica()
+                        {
+                            NomeClinica = x.IdMedicoNavigation.IdClinicaNavigation.NomeClinica
+                        },
+
+                        IdEspecialidadeNavigation = new Especialidade() 
+                        {
+                            Especialidades = x.IdMedicoNavigation.IdEspecialidadeNavigation.Especialidades
+                        },
+
+                        IdUsuarioNavigation = new Usuario()
+                        {
+                            Email = x.IdMedicoNavigation.IdUsuarioNavigation.Email
+                        }
+                        
+                    },
+                    DataHora = x.DataHora
+                }).ToList();
         }
 
         public List<Consulta> ListarMinhas(int IdUsuario)

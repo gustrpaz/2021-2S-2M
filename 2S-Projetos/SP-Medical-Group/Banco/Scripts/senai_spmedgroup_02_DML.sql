@@ -64,15 +64,18 @@ VALUES (3,1,2,'54356-SP','Ricardo Lemos'),(4,1,17,'53452-SP','Roberto Possarle')
 GO
 
 
-INSERT INTO consultas (idPaciente,idMedico,idSituacao,dataHora)
-VALUES (7,4,1,'20/01/2020 15:00'),(2,3,3,'06/01/2020 10:00'),(3,3,1,'07/02/2020 11:00'),
-       (2,3,1,'06/02/2018 10:00'),(4,2,3,'07/02/2019 11:00'),(7,4,2,'08/03/2020 15:00'),
-	   (4,2,2,'09/03/2020 11:00');
+INSERT INTO consultas (idPaciente,idMedico,idSituacao,dataHora,descricao)
+VALUES (7,3,1,'20/01/2020 15:00','Análise dos problemas apresentados pelo paciente'),(2,2,3,'06/01/2020 10:00','Análise dos problemas apresentados pelo paciente'),
+(3,2,1,'07/02/2020 11:00','Análise dos problemas apresentados pelo paciente'),
+       (2,2,1,'06/02/2018 10:00','Análise dos problemas apresentados pelo paciente'),(4,1,3,'07/02/2019 11:00','Análise dos problemas apresentados pelo paciente'),
+	   (7,3,2,'08/03/2020 15:00','Análise dos problemas apresentados pelo paciente'),(4,1,2,'09/03/2020 11:00','Análise dos problemas apresentados pelo paciente');
 GO
 
+
+
 -- Insere uma consulta dentro do prazo para a stored procedure
-INSERT INTO consultas (idPaciente,idMedico,idSituacao,dataHora)
-VALUES (6,3,2,'15/11/2021 08:00');
+INSERT INTO consultas (idPaciente,idMedico,idSituacao,dataHora,descricao)
+VALUES (6,3,2,'15/11/2021 08:00','Análise dos problemas apresentados pelo paciente');
 
 
 

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.consultas_Lista {
+    width: 100%;
+    height: 245px;
+    margin-top: 190px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/background\ section.png');
+}
+
+.box_conteudo_Lista {
+    width: 394px;
+    height: 123px;
+    margin-top: 30px;
+    position: absolute;
+}
+
+.box_conteudo_Lista h1 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 116px;
+    line-height: 139px;
+    color: #FFFFFF;
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.32);
+}
+
+.corpo_consultas_Lista {
+    width: 100%;
+    /* height: 1280px; */
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/raiox.png");
+    background-size: cover;
+    display: flex;
+}
+
+.container_consultas_Lista {
+    width: 1115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: rgba(231, 231, 231, 0.81);
+    border-radius: 10px;
+}
+
+.container_consultas_Lista h1 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 76px;
+    margin-top: 35px;
+    line-height: 80px;
+    color: #0085FF;
+}
+
+.box_consultas_Lista {
+    width: 1024px;
+    height: 471px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.info_consulta_Lista {
+    width: 543px;
+    height: 471px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0085FF;
+    border-radius: 10px;
+}
+
+.info_consulta_Lista div {
+    width: 486px;
+    height: 417px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info_consulta_Lista span {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.desc_consulta_Lista {
+    width: 481px;
+    height: 471px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.span_da_Descricao{
+    width: 444px;
+    height: 388px;
+    background: rgba(187, 187, 187, 0.49);
+    border-radius: 10px;
+
+}
+
+.span_da_Descricao span {
+    padding: 15px;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 41px;
+    color: #000000;
+}
+
+.box_da_Descricao {
+    width: 415px;
+    height: 351px;
+    display: flex;
+    
+}
+.box_da_Descricao span{
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 30px;
+    color: #000000;
+}

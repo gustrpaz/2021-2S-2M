@@ -7,18 +7,18 @@ export default function Footer() {
 
         <div>
             <footer>
-                <div class="container_footer">
-                    <div class="box_footer">
-                        <div class="links_uteis">
-                            <ul class="none">
+                <div className="container_footer">
+                    <div className="box_footer">
+                        <div className="links_uteis">
+                            <ul className="none">
                                 <li> <a href="">Serviços</a></li>
                                 <li> <a href="mailto:grezendepaz@gmail.com">Contatar</a></li>
                             </ul>
                         </div>
 
-                        <a href="#home"><img class="logo_branca" src={logo_branca} alt="logo do site" /></a>
+                        <a href="#home"><img className="logo_branca" src={logo_branca} alt="logo do site" /></a>
 
-                        <div class="Copyright">
+                        <div className="Copyright">
                             <span>Copyright © 2021 - SPmedicalGroup</span>
                         </div>
                     </div>

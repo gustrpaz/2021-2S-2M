@@ -39,11 +39,11 @@ export default function Header() {
                             <i className="fas fa-bars"></i>
                         </a>
                         <a href="#home"><img className="logo_site" src={logo} alt="logo do site" /></a>
-                        <a href="home"><img className="logo_branca_mobile" src={logo_branca} alt="logo site branco" /></a>
+                        <a href="#home"><img className="logo_branca_mobile" src={logo_branca} alt="logo site branco" /></a>
                     </div>
                     <div>
                         <nav id="links" className="menu_header">
-                            <a href="#home">Home</a>
+                            <Link to="/"><a href="#home">Home</a></Link>
                             <a href="">Agendamento</a>
                             <a href="#quemsomos">Quem somos</a>
                             <UsuarioAutenticado />

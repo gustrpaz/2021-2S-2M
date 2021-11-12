@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Footer from '../../components/footer/footer'
 import Header from '../../components/header/header'
 import "../../assets/css/home.css"
@@ -64,7 +65,7 @@ export default function Home() {
                               <div className="box_conteudo_section">
 
                                    <div className="box1">
-                                        <a href="btn_consulta">Consultas</a>
+                                        <Link to="/listaConsulta"><a href="btn_consulta">Consultas</a></Link>
                                         <hr/>
                                    </div>
 
@@ -112,7 +113,7 @@ export default function Home() {
                                    <img src={fundo_section} />
                               </section>
 
-                              <section className="quem_somos">
+                              <section id="quemsomos" className="quem_somos">
                                    <div className="img_quemSomos">
                                        
                                         <img src= {fundo_quemSomos} alt="desenho médico" />

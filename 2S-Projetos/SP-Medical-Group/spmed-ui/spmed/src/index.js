@@ -12,6 +12,7 @@ import {
 
 import Home from './pages/home/Home';
 import Login from './pages/login/login'
+import ListaConsulta from './pages/listaConsulta/ListaConsulta'
 import NotFound from './pages/notFound/notFound'
 
 import './index.css';
@@ -29,6 +30,7 @@ const routing = (
       <Switch>
         <Route exact path="/" component={Home} /> {/* Home */}
         <Route path="/login" component={Login} /> {/* Login */}
+        <Route path="/listaConsulta" component={ListaConsulta} />  {/* Listar Consulta */}
         <Route path="/notFound" component={NotFound} /> {/* Not Found */}
         <Redirect to="/notFound" /> {/* Redireciona para Not Found caso não encontre nenhuma rota */}
       </Switch>
