@@ -12,8 +12,8 @@ function analise() {
     return (
 
         // usuarioAutenticado() ? <Link to="/login"><button className="logout" onChange={this.logout()}>Logout</button></Link>  : <Link to="/login"><a href="">Login</a></Link>
-        usuarioAutenticado() ? <Link to="/login"><a href="">Logout</a></Link>  : <Link to="/login"><a href="">Login</a></Link>
-        // usuarioAutenticado() ? <Link to="/login"><a onClick={ localStorage.clear() } href="">Logout</a></Link>  : <Link to="/login"><a href="">Login</a></Link>
+        // usuarioAutenticado() ? <Link to="/login"><a href="">Logout</a></Link>  : <Link to="/login"><a href="">Login</a></Link>
+        usuarioAutenticado() ? <Link to="/login"><button onClick={ () => localStorage.clear() } >Logout</button></Link>  : <Link to="/login"><button>Login</button></Link>
     )
 }
 

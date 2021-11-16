@@ -46,6 +46,11 @@ INSERT INTO situacao (situacao)
 VALUES ('Realizada'),('Agendada'),('Cancelada');
 GO
 
+-- Adicionado depois
+insert into situacao (situacao)
+values ('Aguardando');
+GO
+
 INSERT INTO especialidades (especialidades)
 VALUES ('Acupuntura'),('Anestesiologia'),('Angiologia'),('Cardiologia'),('Cirurgia Cardiovascular'),
        ('Cirurgia da Mão'),('Cirurgia do Aparelho Digestivo'),('Cirurgia Geral'),('Cirurgia Pediátrica'),

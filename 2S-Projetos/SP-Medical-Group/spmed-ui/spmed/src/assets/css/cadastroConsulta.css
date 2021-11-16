@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.consultas_cadastro {
+    width: 100%;
+    height: 245px;
+    margin-top: 190px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.consultas_cadastro img {
+    width: 100%;
+    height: 100%;
+}
+
+.box_conteudo_cadastro {
+    width: 394px;
+    height: 123px;
+    margin-top: 30px;
+    position: absolute;
+}
+
+.box_conteudo_cadastro h1 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 116px;
+    line-height: 139px;
+    color: #FFFFFF;
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.32);
+}
+
+.corpo_consulta_cadastro {
+    width: 100%;
+    height: 1048px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url('../img/consulta.png'); */
+    background-size: cover;
+}
+
+.form-group_cadastro {
+    width: 906px;
+    height: 897px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(231, 231, 231, 0.81);
+    border-radius: 11px;
+}
+
+.form-group_cadastro h1 {
+    width: 532px;
+    height: 80px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 76px;
+    line-height: 91px;
+    color: #008BDA;
+    margin-bottom: 20px;
+}
+
+.container_input1_cadastro {
+    width: 702px;
+    height: 703px;
+    display: flex;
+    flex-direction: column;
+    /* background: rgba(0, 109, 251, 0.986); */
+}
+
+.texto-form1_cadastro {
+    padding-left: 19px;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.texto-form_cadastro {
+    margin-top: 20px;
+    padding-left: 19px;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.input-form_cadastro {
+    width: 696px;
+    height: 50px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background: #FFFFFF;
+    border-radius: 11px;
+    padding: 0px 20px;
+    font-size: 20px;
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.botao_cadastro {
+    width: 237px;
+    height: 50px;
+    cursor: pointer;
+    border: 0 none;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 38px;
+    border-radius: 11px;
+    color: white;
+    background: #008BDA;
+}
+
+.box_button_cadastro {
+    width: 100%;
+    height: 100px;
+    margin-top: 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao_cadastro:hover{
+    scale: 1.1;
+    transition: all .2s ease-in-out;
+}
+
+.container_input1_cadastro a {
+    height: 40px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    color: #0085FF;
+}

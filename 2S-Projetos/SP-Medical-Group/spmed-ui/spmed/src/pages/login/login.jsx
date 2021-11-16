@@ -7,6 +7,7 @@ import { parseJwt, usuarioAutenticado } from '../../services/auth';
 import { Link } from 'react-router-dom';
 
 
+
 import "../../assets/css/login.css"
 import axios from 'axios';
 
@@ -14,8 +15,8 @@ export default class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            email: 'adm@gmail.com',
-            senha: '123',
+            email: '',
+            senha: '',
             erroMensagem: '',
             isLoading: false
         }
@@ -60,7 +61,7 @@ export default class Login extends Component {
 
 
                     else {
-                        this.props.history.push('/home')
+                        this.props.history.push('/')
                     }
                 }
             })
@@ -103,13 +104,15 @@ export default class Login extends Component {
                                     <label className="txt-form_login">Email</label>
                                     <input className="input-form_login"
                                         type="text"
+                                        name="email"
                                         value={this.state.email}
                                         onChange={this.atualizaStateCampo}
                                     />
 
                                     <label className="txt-form_login">Senha</label>
                                     <input className="input-form_login"
-                                        type="text"
+                                        type="password"
+                                        name="senha"
                                         value={this.state.senha}
                                         onChange={this.atualizaStateCampo}
                                     />

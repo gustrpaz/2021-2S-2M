@@ -119,7 +119,8 @@ header {
     margin-top: 10px;
     margin-bottom: 2px;
 }
-.menu_header_mobile{
+
+.menu_header_mobile {
     display: none;
 }
 
@@ -133,6 +134,19 @@ header {
     background-color: #008BDA;
 }
 
+.menu_header button {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 43px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: unset;
+    border-style: unset;
+}
+
 .menu_header a {
     font-family: 'Titillium Web';
     font-style: normal;
@@ -144,7 +158,7 @@ header {
     color: #FFFFFF;
 }
 
-.logout{
+.logout {
     font-family: 'Titillium Web';
     font-style: normal;
     font-weight: normal;
@@ -153,6 +167,13 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.menu_header button:hover {
+    /* color: rgb(255, 238, 4); */
+    scale: 1.1;
+    transition: all .2s ease-in-out;
+    font-weight: 600;
 }
 
 .menu_header a:hover {

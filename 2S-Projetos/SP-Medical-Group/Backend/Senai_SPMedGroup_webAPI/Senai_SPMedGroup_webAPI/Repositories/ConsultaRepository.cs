@@ -118,11 +118,27 @@ namespace Senai_SPMedGroup_webAPI.Repositories
                     IdPaciente = x.IdPaciente,
                     IdMedico = x.IdMedico,
                     IdSituacao = x.IdSituacao,
+                    Descricao = x.Descricao,
+
+                    IdSituacaoNavigation = new Situacao()
+                    {
+                        Situacao1 = x.IdSituacaoNavigation.Situacao1
+                    },
 
                     IdMedicoNavigation = new Medico()
                     {
                         Crm = x.IdMedicoNavigation.Crm,
                         NomeMedico = x.IdMedicoNavigation.NomeMedico,
+
+                        IdClinicaNavigation = new Clinica()
+                        {
+                            NomeClinica = x.IdMedicoNavigation.IdClinicaNavigation.NomeClinica
+                        },
+
+                        IdEspecialidadeNavigation = new Especialidade()
+                        {
+                            Especialidades = x.IdMedicoNavigation.IdEspecialidadeNavigation.Especialidades
+                        },
 
                         IdUsuarioNavigation = new Usuario()
                         {
@@ -131,6 +147,7 @@ namespace Senai_SPMedGroup_webAPI.Repositories
 
                     },
                     DataHora = x.DataHora
+                   
                 }).ToList();
 
         }

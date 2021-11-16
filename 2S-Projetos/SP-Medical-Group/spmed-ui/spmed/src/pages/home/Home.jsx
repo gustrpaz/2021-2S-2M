@@ -1,16 +1,19 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import Footer from '../../components/footer/footer'
 import Header from '../../components/header/header'
+import { parseJwt, usuarioAutenticado } from '../../services/auth';
 import "../../assets/css/home.css"
 
 import fundo_quemSomos from '../../assets/img/undraw_medicine_b1ol.svg'
 import fundo1_banner from '../../assets/img/maobebe.png'
 import fundo2_banner from '../../assets/img/medicos.png'
-
 import fundo_section from '../../assets/img/exame.png'
 
+
 export default function Home() {
+
+     let history = useHistory();
 
 //      var myIndex = 0;
 //     carousel();
@@ -40,6 +43,30 @@ export default function Home() {
 //             }
 //         }
 
+     function redirecionar(){
+          console.log()
+          switch (parseJwt().role) {
+               case "1":
+                   history.push("/listaConsulta")
+                   console.log("estou logado: " + usuarioAutenticado())
+                   break;
+
+               case "2":
+                   history.push("/listaConsultaMed")
+                   console.log("estou logado: " + usuarioAutenticado())
+                   break;
+
+               case "3":
+                   history.push("/listaConsultaPac")
+                   console.log("estou logado: " + usuarioAutenticado())
+                   break;
+           
+               default:
+                   history.push("/")
+                   break;
+           }
+       }
+
      return (
 
           <div>
@@ -64,10 +91,12 @@ export default function Home() {
                          <div className="box_consultas">
                               <div className="box_conteudo_section">
 
-                                   <div className="box1">
-                                        <Link to="/listaConsulta"><a href="btn_consulta">Consultas</a></Link>
+                                   <button className="box1" onClick={redirecionar}>
+
+                                        <a href="btn_consulta">Consultas</a>
+                                        {/* <Link to="/listaConsulta"><a href="btn_consulta">Consultas</a></Link> */}
                                         <hr/>
-                                   </div>
+                                   </button>
 
                                    <div className="box2">
                                              <a href="btn_consulta">Unidade</a>
@@ -104,7 +133,7 @@ export default function Home() {
                                              </div>
                                         </div>
                                         <div className="box_VerTodas">
-                                             <span>Ver todas</span>
+                                             <Link to="/especialidade"><span>Ver todas</span></Link>
                                         </div>
                                    </div>
                               </section>

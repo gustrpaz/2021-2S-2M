@@ -12,6 +12,16 @@ import UsuarioAutenticado from '../funcao login/funcao'
 
 
 export default function Header() {
+    function BotaoDoMenu() {
+        var menu = document.getElementById("links");
+        if (menu.style.display == "flex") {
+            // Esconda o menu 
+            menu.style.display = "none";
+        } else {
+            //Mostre o menu
+            menu.style.display = "flex"
+        }
+    }
 
     return(
         <div>
@@ -35,7 +45,7 @@ export default function Header() {
                     <a href="#home"><img className="logo_site" src={logo} alt="logo do site" /></a>
                     <div className="menu_header_mobile">
 
-                        <a className="btn_menu" href="#" onclick="BotaoDoMenu()">
+                        <a className="btn_menu" href="#" onClick={BotaoDoMenu}>
                             <i className="fas fa-bars"></i>
                         </a>
                         <a href="#home"><img className="logo_site" src={logo} alt="logo do site" /></a>
@@ -43,11 +53,12 @@ export default function Header() {
                     </div>
                     <div>
                         <nav id="links" className="menu_header">
-                            <Link to="/"><a href="#home">Home</a></Link>
-                            <a href="">Agendamento</a>
+                            <Link to="/"><button >Home</button></Link>
+                            {/* Agendamento irá redirecionar para a tela de cadastro de consulta  */}
+                            <Link to=""><button>Agendamento</button></Link>
                             <a href="#quemsomos">Quem somos</a>
                             <UsuarioAutenticado />
-                            <a className="fechar" href="#" onclick="BotaoDoMenu()">Fechar</a>
+                            <a className="fechar" href="#" onClick={BotaoDoMenu}>Fechar</a>
                         </nav>
                     </div>
                 </div>

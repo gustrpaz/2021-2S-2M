@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.medico_ListaMed {
+    width: 100%;
+    height: 245px;
+    margin-top: 190px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.medico_ListaMed img {
+    width: 100%;
+    height: 100%;
+}
+
+.box_conteudo_ListaMed {
+    width: 265px;
+    height: 123px;
+    margin-top: 30px;
+    position: absolute;
+}
+
+.box_conteudo_ListaMed h1 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 116px;
+    line-height: 139px;
+    color: #FFFFFF;
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.32);
+}
+
+.corpo_consultas_ListaMed {
+    width: 100%;
+    height: 1280px;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/raiox.png');
+    background-size: cover;
+    display: flex;
+}
+
+.container_consultas_ListaMed {
+    width: 1115px;
+    height: 1250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(231, 231, 231, 0.81);
+    border-radius: 10px;
+}
+
+.container_consultas_ListaMed h1 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 76px;
+    margin-top: 35px;
+    line-height: 80px;
+    color: #0085FF;
+}
+
+.box_consultas_ListaMed {
+    width: 1024px;
+    height: 471px;
+    margin-top: 50px;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.info_consulta_ListaMed {
+    width: 543px;
+    height: 471px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0085FF;
+    border-radius: 10px;
+}
+
+.info_consulta_ListaMed div {
+    width: 486px;
+    height: 417px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+.info_consulta_ListaMed span {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.box_botao_ListaMed {
+    width: 100%;
+    height: 70px;
+    margin-top: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao_ListaMed:hover{
+    scale: 1.07;
+    transition: all .2s ease-in-out;
+}
+
+.info_consulta_ListaMed button {
+    width: 230.96px;
+    height: 64.83px;
+    cursor: pointer;
+    border: 0 none;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 43px;
+    color: #000000;
+    background: linear-gradient(180deg, #FFFFFF 14.06%, #EDEDED 59.9%, #A5A5A5 100%);
+    border-radius: 10px;
+    transform: rotate(0.08deg);
+}
+
+.desc_consulta_ListaMed {
+    width: 481px;
+    height: 471px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.desc_consulta_ListaMed div {
+    width: 444px;
+    height: 422px;
+    background: rgba(187, 187, 187, 0.49);
+    border-radius: 10px;
+}
+
+.desc_consulta_ListaMed span {
+    padding: 15px;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 41px;
+    color: #000000;
+}
