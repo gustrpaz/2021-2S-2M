@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+}
+
+.background {
+    width: 50%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: url(../assets/background.jpg);
+}
+
+.background img {
+    width: 505px;
+    height: 373px;
+}
+
+.criar_conta {
+    width: 719px;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.criar_conta img {
+    margin-bottom: 35px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 594px;
+    height: 435px;
+    background: rgba(224, 224, 224, 0.61);
+    border-radius: 10px;
+}
+
+.form-group h1 {
+    margin-top: 40px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 59px;
+    line-height: 71px;
+    color: #0085FF;
+}
+
+.container_input {
+    width: 516px;
+    height: 623px;
+    display: flex;
+    flex-direction: column;
+}
+
+.txt-form {
+    margin-top: 20px;
+    padding-left: 19px;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.input-form {
+    width: 516px;
+    height: 50px;
+    border: 0 none;
+    background: #FFFFFF;
+    border-radius: 11px;
+    padding: 0px 20px;
+    font-size: 20px;
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.box_botao {
+    width: 100%;
+    height: 114px;
+    margin-top: 41px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botao:hover{
+    scale: 1.1;
+    transition: all .2s ease-in-out;
+}
+
+.container_input button {
+    width: 237px;
+    height: 50px;
+    font-family: 'Titillium Web';
+    cursor: pointer;
+    border: 0 none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 41px;
+    color: #FFFFFF;
+    background: #0085FF;
+    border-radius: 11px;
+}
+
+footer {
+    width: 100%;
+    height: 388px;
+    display: flex;
+    align-items: center;
+    background-image: url(../assets/medicine.png);
+    background-size: cover;
+    background-position: 0px -210px;
+}
+
+.container_footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 133, 255, 0.43);
+}
+
+.box_footer {
+    width: 1305px;
+    height: 223px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links_uteis {
+    width: 157px;
+    height: 90px;
+}
+
+.links_uteis a {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 44px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+ul.none {
+    list-style-type: none;
+}
+
+.direitos {
+    width: 371px;
+    height: 97px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.direitos span {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.Copyright {
+    width: 388px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Copyright span {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 44px;
+    color: #FFFFFF;
+}

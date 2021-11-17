@@ -1,0 +1,783 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* Header/Cabeçalho */
+
+header {
+    height: 178px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: #09ff00;
+}
+
+.container_header {
+    width: 100%;
+    height: 178px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.first_nav {
+    width: 100%;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    background-color: #333747;
+}
+
+.container_first {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_email {
+    width: 365px;
+    display: flex;
+    align-items: center;
+    /* background-color: rgb(255, 0, 0); */
+}
+
+.box_email a {
+    margin-left: 8px;
+}
+
+.redes_sociais {
+    width: 154px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.redes_sociais a:hover {
+    scale: 1.1;
+    transition: all .2s ease-in-out;
+}
+
+.email {
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+}
+
+.twitter {
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+}
+
+.instagram {
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+}
+
+.youtube {
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+}
+
+.first_nav span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.first_nav a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.logo_site {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+.menu_header_mobile{
+    display: none;
+}
+
+.menu_header {
+    height: 85px;
+    width: 1200px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #008BDA;
+}
+
+.menu_header a {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 43px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.menu_header a:hover {
+    /* color: rgb(255, 238, 4); */
+    scale: 1.1;
+    transition: all .2s ease-in-out;
+    font-weight: 600;
+}
+
+.fechar {
+    display: none;
+}
+
+.fa, .fas {
+    display: none;
+}
+
+.btn_menu i {
+    display: none;
+}
+
+/* Banners */
+
+.container_banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.banner .conteudo_banner {
+    margin-right: 55px;
+}
+
+.banner2 .conteudo_banner {
+    margin-right: 55px;
+}
+
+.banner {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    height: 840px
+}
+
+.banner2 {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    height: 840px
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.box_conteudo {
+    height: 150px;
+    width: 990px;
+    margin-top: 172px;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.box_conteudo h1 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 98px;
+    line-height: 118px;
+    color: #FFFFFF;
+    text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.3);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .7;
+    }
+    to {
+        opacity: 5;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .7;
+    }
+    to {
+        opacity: 5;
+    }
+}
+
+/* --------------------------- */
+
+.container_section {
+    width: 100%;
+    height: 450px;
+}
+
+.box_consultas {
+    width: 100%;
+    height: 447px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #008BDA;
+    clip-path: polygon(100% 0, 100% 78%, 0 100%, 0 16%);
+}
+
+.box_conteudo_section {
+    width: 920px;
+    height: 196px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box1 {
+    width: 351px;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 11px;
+    cursor: pointer;
+}
+
+.box1:hover {
+    scale: 1.1;
+    transition: all .2s ease-in-out;
+}
+
+.box2:hover {
+    scale: 1.1;
+    transition: all .2s ease-in-out;
+}
+
+.box1 hr {
+    width: 240px;
+    color: #008BDA;
+}
+
+.box2 hr {
+    width: 240px;
+    color: #008BDA;
+}
+
+.box2 {
+    width: 351px;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 11px;
+    cursor: pointer;
+}
+
+.box_conteudo_section a {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 71px;
+    line-height: 85px;
+    text-transform: uppercase;
+    color: #0085FF;
+}
+
+.container_especialidades {
+    width: 100%;
+    height: 581px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E7E7E7;
+}
+
+.container_interno {
+    width: 1211px;
+    height: 471px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.box_especialidade {
+    width: 346px;
+    height: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 65%;
+}
+
+.box_especialidade span {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 69px;
+    line-height: 83px;
+    text-transform: uppercase;
+    color: #0085FF;
+}
+
+.box_conteudo_especialidade {
+    width: 1215px;
+    height: 283px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box_conteudo_especialidade div {
+    width: 348px;
+    height: 96px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #EBEBEB 69.27%, #C4C4C4 100%);
+    box-shadow: 4px 4px 4px rgba(0, 133, 255, 0.34);
+    border-radius: 10px;
+}
+
+.caixas_especialidade {
+    width: 348px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #FFFFFF 0%, #EBEBEB 69.27%, #C4C4C4 100%);
+    box-shadow: 4px 4px 4px rgba(0, 133, 255, 0.34);
+    border-radius: 10px;
+}
+
+.caixas_especialidade:hover {
+    scale: 1.1;
+    transition: all .2s ease-in-out;
+}
+
+.caixas_especialidade span {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 41px;
+    line-height: 62px;
+    color: #0085FF;
+}
+
+.box_VerTodas {
+    width: 128px;
+    height: 30px;
+    margin-right: 81%;
+}
+
+.box_VerTodas span {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #0085FF;
+}
+
+.container_sessao {
+    width: 100%;
+    height: 290px;
+}
+
+.container_sessao img {
+    width: 100%;
+    height: 100%;
+}
+
+/* -------------------------------------- */
+
+/*  
+/* Parte de Sobre o Projeto */
+
+.quem_somos {
+    width: 100%;
+    height: 740px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(270deg, #0085FF 49.88%, #FFFFFF 100%);
+}
+
+.img_quemSomos img {
+    width: 630px;
+    height: 489px;
+    margin-right: 15px;
+}
+
+.txt_quemSomos {
+    width: 550px;
+    height: 674px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.txt_quemSomos h1 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.txt_quemSomos p {
+    margin-top: 20px;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 46px;
+    text-align: justify;
+    color: #FFFFFF;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.36);
+}
+
+/* -------------------------------------- */
+
+/*  
+     /* Rodapé/Footer */
+
+footer {
+    width: 100%;
+    height: 388px;
+    display: flex;
+    align-items: center;
+    background-image: url(../assets/medicine.png);
+    background-size: cover;
+    background-position: 0px -210px;
+}
+
+.container_footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 133, 255, 0.43);
+}
+
+.box_footer {
+    width: 1305px;
+    height: 223px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links_uteis {
+    width: 157px;
+    height: 90px;
+}
+
+.links_uteis a {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 44px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+ul.none {
+    list-style-type: none;
+}
+
+.direitos {
+    width: 371px;
+    height: 97px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.direitos span {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.Copyright {
+    width: 388px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Copyright span {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+@media(min-width: 600px) {
+    .container {
+        width: 80vw;
+        margin: 0px;
+    }
+    .first_nav {
+        display: none;
+    }
+    .logo_site {
+        display: none;
+    }
+    .container_header {
+        width: 600px;
+        height: 178.78px;
+        display: flex;
+        align-items: center;
+        background: #008BDA;
+    }
+    .menu_header_mobile {
+        width: 461px;
+        height: 178px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu_header {
+        display: none;
+        height: 300px;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: unset;
+        position: absolute;
+        flex-direction: column;
+        padding-left: 10vw;
+        right: 0;
+        top: 128px;
+        background-color: black;
+    }
+    .fa, .fas {
+        font-weight: 900;
+        color: white;
+        font-size: 30px;
+        margin-right: 43px;
+    }
+    .btn_menu i {
+        display: inline-block;
+        color: white;
+        font-size: 42px;
+    }
+}
+
+
+@media(min-width: 992px) {
+    header {
+        height: 178px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        background-color: #09ff00;
+    }
+    
+    .container_header {
+        width: 100%;
+        height: 178px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        background-color: #FFFFFF;
+    }
+    
+    .first_nav {
+        width: 100%;
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        background-color: #333747;
+    }
+    
+    .container_first {
+        width: 1200px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .box_email {
+        width: 365px;
+        display: flex;
+        align-items: center;
+        /* background-color: rgb(255, 0, 0); */
+    }
+    
+    .box_email a {
+        margin-left: 8px;
+    }
+    
+    .redes_sociais {
+        width: 154px;
+        height: 39px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .redes_sociais a:hover {
+        scale: 1.1;
+        transition: all .2s ease-in-out;
+    }
+    
+    .email {
+        width: 28px;
+        height: 28px;
+        padding: 2px;
+    }
+    
+    .twitter {
+        width: 28px;
+        height: 28px;
+        padding: 2px;
+    }
+    
+    .instagram {
+        width: 28px;
+        height: 28px;
+        padding: 2px;
+    }
+    
+    .youtube {
+        width: 28px;
+        height: 28px;
+        padding: 2px;
+    }
+    
+    .first_nav span {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+    
+    .first_nav a {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    
+    .logo_site {
+        margin-top: 10px;
+        margin-bottom: 2px;
+    }
+    .menu_header_mobile{
+        display: none;
+    }
+    
+    .menu_header {
+        height: 85px;
+        width: 1200px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #008BDA;
+    }
+    
+    .menu_header a {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 23px;
+        line-height: 43px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    
+    .menu_header a:hover {
+        /* color: rgb(255, 238, 4); */
+        scale: 1.1;
+        transition: all .2s ease-in-out;
+        font-weight: 600;
+    }
+    
+    .fechar {
+        display: none;
+    }
+    
+    .fa, .fas {
+        display: none;
+    }
+    
+    .btn_menu i {
+        display: none;
+    }
+    
+}
+
+/* @media(min-width: 768px){}
+@media(min-width: 1366px) {}
+@media(min-width: 1920px) {}  */

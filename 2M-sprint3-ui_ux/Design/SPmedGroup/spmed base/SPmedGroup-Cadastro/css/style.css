@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* Header/Cabeçalho */
+
+header {
+    height: 178px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: #09ff00;
+}
+
+
+
+.container_header {
+    width: 100%;
+    height: 178px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.first_nav {
+    width: 100%;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    background-color: #333747;
+}
+
+.container_first {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_email {
+    width: 365px;
+    display: flex;
+    align-items: center;
+    /* background-color: rgb(255, 0, 0); */
+}
+
+.box_email a {
+    margin-left: 8px;
+}
+
+.redes_sociais {
+    width: 154px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.redes_sociais a:hover{
+    scale: 1.1;
+    transition: all .2s ease-in-out;
+    
+}
+
+.email {
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+}
+
+.twitter {
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+}
+
+.instagram {
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+}
+
+.youtube {
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+}
+
+.first_nav span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.first_nav a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.logo_site {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.menu_header {
+    height: 85px;
+    width: 1200px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #008BDA;
+}
+
+.menu_header a {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 43px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.menu_header a:hover {
+    /* color: rgb(255, 238, 4); */
+    scale: 1.1;
+    transition: all .2s ease-in-out;
+    font-weight: 600;
+}
+
+
+.consultas {
+    width: 100%;
+    height: 245px;
+    margin-top: 190px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.consultas img {
+    width: 100%;
+    height: 100%;
+}
+
+.box_conteudo {
+    width: 394px;
+    height: 123px;
+    margin-top: 30px;
+    position: absolute;
+}
+
+.box_conteudo h1 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 116px;
+    line-height: 139px;
+    color: #FFFFFF;
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.32);
+}
+
+.corpo_consulta {
+    width: 100%;
+    height: 1048px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/fundo\ consulta.png);
+    background-size: cover;
+}
+
+.form-group {
+    width: 906px;
+    height: 897px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(231, 231, 231, 0.81);
+    border-radius: 11px;
+}
+
+.form-group h1 {
+    width: 532px;
+    height: 80px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 76px;
+    line-height: 91px;
+    color: #008BDA;
+    margin-bottom: 20px;
+}
+
+.container_input1 {
+    width: 702px;
+    height: 703px;
+    display: flex;
+    flex-direction: column;
+    /* background: rgba(0, 109, 251, 0.986); */
+}
+
+.texto-form1 {
+    padding-left: 19px;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.texto-form {
+    margin-top: 20px;
+    padding-left: 19px;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.input-form {
+    width: 696px;
+    height: 50px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background: #FFFFFF;
+    border-radius: 11px;
+    padding: 0px 20px;
+    font-size: 20px;
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.botao {
+    width: 237px;
+    height: 50px;
+    cursor: pointer;
+    border: 0 none;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 38px;
+    border-radius: 11px;
+    color: white;
+    background: #008BDA;
+}
+
+.box_button {
+    width: 100%;
+    height: 100px;
+    margin-top: 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao:hover{
+    scale: 1.1;
+    transition: all .2s ease-in-out;
+}
+
+.container_input1 a {
+    height: 40px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
+    color: #0085FF;
+}
+
+footer {
+    width: 100%;
+    height: 388px;
+    display: flex;
+    align-items: center;
+    background-image: url(../assets/medicine.png);
+    background-size: cover;
+    background-position: 0px -210px;
+}
+
+.container_footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 133, 255, 0.43);
+}
+
+.box_footer {
+    width: 1305px;
+    height: 223px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links_uteis {
+    width: 157px;
+    height: 90px;
+}
+
+.links_uteis a {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 44px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+ul.none {
+    list-style-type: none;
+}
+
+.direitos {
+    width: 371px;
+    height: 97px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.direitos span {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.Copyright {
+    width: 388px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Copyright span {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 44px;
+    color: #FFFFFF;
+}

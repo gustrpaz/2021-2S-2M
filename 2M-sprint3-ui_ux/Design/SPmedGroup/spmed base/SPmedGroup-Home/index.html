@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP Medical Group</title>
+    <script src="https://kit.fontawesome.com/8072771ef9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <div class="container container_header">
+            <div class="first_nav">
+                <div class="container_first">
+                    <div class="box_email">
+                        <span>Entre em contato:</span>
+                        <a href="mailto:grezendepaz@gmail.com">grezendepaz@gmail.com</a>
+                    </div>
+                    <div class="redes_sociais">
+                        <a href="mailto:grezendepaz@gmail.com"><img class="email" src="assets/email.png" alt="email"></a>
+                        <a href="https://twitter.com/Guhrezendin"><img class="twitter" src="assets/twitter.png" alt="twitter"></a>
+                        <a href="https://www.instagram.com/slv.rezende/"><img class="instagram"
+                                src="assets/instagram.png" alt="instagram"></a>
+                        <a href="https://www.youtube.com/channel/UCcPa9DHu3VKhiV9RQLXLhjw"> <img class="youtube"
+                                src="assets/youtube.png" alt="youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_header_mobile">
+
+                <a class="btn_menu" href="#" onclick="BotaoDoMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="#home"><img class="logo_site" src="assets/medgroup-hori.png" alt="logo do site"></a>
+                <a href="home"><img class="logo_branca_mobile" src="assets/logo_branca.png" alt="logo site branco"></a>
+            </div>
+            <div>
+                <nav id="links" class="menu_header">
+                    <a href="#home">Home</a>
+                    <a href="">Agendamento</a>
+                    <a href="#quemsomos">Quem somos</a>
+                    <a href="">Login</a>
+                    <a class="fechar" href="#" onclick="BotaoDoMenu()">Fechar</a>
+                </nav>
+            </div>
+        </div>
+        
+    </header>
+    <main>
+        <!-- Banners -->
+        <div id="home" class="container_banner banner mySlides fade">
+            <img src="assets/maobebe.png" alt="plano de fundo bebê">
+            <div class="box_conteudo">
+                <h1>Welcome to spmedicalgroup</h1>
+            </div>
+        </div>
+
+        <div id="home" class="container_banner banner2 mySlides fade">
+            <img src="assets/medicos.png" alt="plano de fundo médicos">
+            <div class="box_conteudo">
+                <h1>Welcome to spmedicalgroup</h1>
+            </div>
+        </div>
+
+        <section class="container_section">
+            <div class="box_consultas">
+                <div class="box_conteudo_section">
+                    <div class="box1">
+                        <a href="btn_consulta">Consultas</a>
+                        <hr>
+                    </div>
+                    <div class="box2">
+                        <a href="btn_consulta">Unidade</a>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container_especialidades">
+            <div class="container_interno">
+                <div class="box_especialidade">
+                    <span>Especialidades</span>
+                </div>
+                <div class="box_conteudo_especialidade">
+                    <div class="caixas_especialidade">
+                        <span>Cardiologia</span>
+                    </div>
+                    <div class="caixas_especialidade">
+                        <span>Angiologia</span>
+                    </div>
+                    <div class="caixas_especialidade">
+                        <span>Urulogia</span>
+                    </div>
+                    <div class="caixas_especialidade">
+                        <span>Pediatra</span>
+                    </div>
+                    <div class="caixas_especialidade">
+                        <span>Cirurgia</span>
+                    </div>
+                    <div class="caixas_especialidade">
+                        <span>Psquiatria</span>
+                    </div>
+                </div>
+                <div class="box_VerTodas">
+                    <span>Ver todas</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="container_sessao">
+            <img src="assets/exame.png">
+        </section>
+
+        <section class="quem_somos">
+            <div class="img_quemSomos">
+                <img src="./assets/undraw_medicine_b1ol.svg" alt="desenho médico">
+            </div>
+            <div class="txt_quemSomos">
+                <h1>Quem somos</h1>
+                <p>
+                    Fundada em 2021 em São Paulo, a clínica Sp Medical Group foi fundada por Gustavo Rezende Paz, com o
+                    intuito de ser uma rede integrada de cuidados com a sáude no Brasil, atualmente somente em São
+                    Paulo, com foco em serviços humanizados, qualificação de funcionários, adoção de novas tecnologias e
+                    expansão de serviços, a fim de melhorar a qualidade na área da saúde.
+                </p>
+                <p>
+                    Rua Alameda Barão de Limeira, 539 - Santa Cecilia, São Paulo - SP, 01202-001
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container_footer">
+            <div class="box_footer">
+                <div class="links_uteis">
+                    <ul class="none">
+                        <!-- Serviços = Tela de Agende uma consulta -->
+                        <li> <a href="">Serviços</a></li>
+                        <li> <a href="mailto:grezendepaz@gmail.com">Contatar</a></li>
+                    </ul>
+                </div>
+
+                <a href="#home"><img class="logo_branca" src="assets/logo_branca.png" alt="logo do site"></a>
+
+                <div class="Copyright">
+                    <span>Copyright © 2021 - SPmedicalGroup</span>
+                </div>
+            </div>
+           
+        </div>
+
+    </footer>
+
+</body>
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "flex";
+        setTimeout(carousel, 6000);
+    }
+
+    function BotaoDoMenu() {
+            var menu = document.getElementById("links");
+            if (menu.style.display == "flex") {
+                // Esconda o menu 
+                menu.style.display = "none";
+            } else {
+                //Mostre o menu
+                menu.style.display = "flex"
+            }
+        }
+</script>
+
+</html>
