@@ -63,10 +63,10 @@ export default function Home() {
            
                default:
                    history.push("/")
-                   break;
+                   break;             
            }
        }
-
+     
      return (
 
           <div>
@@ -93,13 +93,13 @@ export default function Home() {
 
                                    <button className="box1" onClick={redirecionar}>
 
-                                        <a href="btn_consulta">Consultas</a>
+                                        <a href="">Consultas</a>
                                         {/* <Link to="/listaConsulta"><a href="btn_consulta">Consultas</a></Link> */}
                                         <hr/>
                                    </button>
 
                                    <div className="box2">
-                                             <a href="btn_consulta">Unidade</a>
+                                             <a href="#quemsomos">Unidade</a>
                                          <hr /> 
                                    </div>
 
@@ -129,7 +129,7 @@ export default function Home() {
                                                   <span>Cirurgia</span>
                                              </div>
                                              <div className="caixas_especialidade">
-                                                  <span>Psquiatria</span>
+                                                  <Link to="/especialidade"><span>Psquiatria</span></Link>
                                              </div>
                                         </div>
                                         <div className="box_VerTodas">

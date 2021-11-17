@@ -55,7 +55,7 @@ export default function Header() {
                         <nav id="links" className="menu_header">
                             <Link to="/"><button >Home</button></Link>
                             {/* Agendamento irá redirecionar para a tela de cadastro de consulta  */}
-                            <Link to=""><button>Agendamento</button></Link>
+                            <Link to="/cadastroConsulta"><button>Agendamento</button></Link>
                             <a href="#quemsomos">Quem somos</a>
                             <UsuarioAutenticado />
                             <a className="fechar" href="#" onClick={BotaoDoMenu}>Fechar</a>

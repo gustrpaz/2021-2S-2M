@@ -11,7 +11,7 @@ export default function Footer() {
                     <div className="box_footer">
                         <div className="links_uteis">
                             <ul className="none">
-                                <li> <a href="">Serviços</a></li>
+                                <li> <a href="/">Serviços</a></li>
                                 <li> <a href="mailto:grezendepaz@gmail.com">Contatar</a></li>
                             </ul>
                         </div>

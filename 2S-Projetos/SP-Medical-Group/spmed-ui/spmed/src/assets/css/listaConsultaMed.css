@@ -41,7 +41,6 @@
 
 .corpo_consultas_ListaMed {
     width: 100%;
-    height: 1280px;
     justify-content: center;
     align-items: center;
     background-image: url('../img/raiox.png');
@@ -51,7 +50,8 @@
 
 .container_consultas_ListaMed {
     width: 1115px;
-    height: 1250px;
+    margin-bottom: 50px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,7 +73,8 @@
 .box_consultas_ListaMed {
     width: 1024px;
     height: 471px;
-    margin-top: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     display: flex;
     background: #FFFFFF;
     border-radius: 10px;
@@ -147,19 +148,36 @@
     border-radius: 10px;
 }
 
-.desc_consulta_ListaMed div {
+
+.span_da_Descricao{
     width: 444px;
-    height: 422px;
+    height: 388px;
     background: rgba(187, 187, 187, 0.49);
     border-radius: 10px;
+
 }
 
-.desc_consulta_ListaMed span {
+.span_da_Descricao span {
     padding: 15px;
     font-family: 'Titillium Web';
     font-style: normal;
     font-weight: normal;
     font-size: 27px;
     line-height: 41px;
+    color: #000000;
+}
+
+.box_da_Descricao {
+    width: 415px;
+    height: 351px;
+    display: flex;
+    
+}
+.box_da_Descricao span{
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 30px;
     color: #000000;
 }

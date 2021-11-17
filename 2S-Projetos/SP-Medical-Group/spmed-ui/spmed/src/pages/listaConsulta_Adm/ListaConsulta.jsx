@@ -74,7 +74,6 @@ export default class ListaConsulta extends Component {
 
                             {this.state.listaConsultas.map((consulta) => {
                                 return (
-                                    console.log('chegou'),
                                     <div className="box_consultas_Lista">
                                         <div className="info_consulta_Lista">
                                             <div>

@@ -125,6 +125,7 @@ namespace Senai_SPMedGroup_webAPI.Repositories
                         Situacao1 = x.IdSituacaoNavigation.Situacao1
                     },
 
+      
                     IdMedicoNavigation = new Medico()
                     {
                         Crm = x.IdMedicoNavigation.Crm,
@@ -140,11 +141,7 @@ namespace Senai_SPMedGroup_webAPI.Repositories
                             Especialidades = x.IdMedicoNavigation.IdEspecialidadeNavigation.Especialidades
                         },
 
-                        IdUsuarioNavigation = new Usuario()
-                        {
-                            Email = x.IdMedicoNavigation.IdUsuarioNavigation.Email
-                        }
-
+              
                     },
                     DataHora = x.DataHora
                    
@@ -171,6 +168,13 @@ namespace Senai_SPMedGroup_webAPI.Repositories
                     IdPaciente = x.IdPaciente,
                     IdMedico = x.IdMedico,
                     IdSituacao = x.IdSituacao,
+                    Descricao = x.Descricao,
+                    DataHora = x.DataHora,
+
+                    IdSituacaoNavigation = new Situacao()
+                    {
+                        Situacao1 = x.IdSituacaoNavigation.Situacao1
+                    },
 
                     IdMedicoNavigation = new Medico()
                     {
@@ -181,8 +185,18 @@ namespace Senai_SPMedGroup_webAPI.Repositories
                         {
                             Email = x.IdMedicoNavigation.IdUsuarioNavigation.Email
                         },
+
+                        IdEspecialidadeNavigation = new Especialidade()
+                        {
+                            Especialidades = x.IdMedicoNavigation.IdEspecialidadeNavigation.Especialidades
+                        },
+
+                        IdClinicaNavigation = new Clinica()
+                        {
+                            NomeClinica = x.IdMedicoNavigation.IdClinicaNavigation.NomeClinica
+                        }
                     },
-                    DataHora = x.DataHora,
+       
                         IdPacienteNavigation = new Paciente()
                         {
                             Nome = x.IdPacienteNavigation.Nome

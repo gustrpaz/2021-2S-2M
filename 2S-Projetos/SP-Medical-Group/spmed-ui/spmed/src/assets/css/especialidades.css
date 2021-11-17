@@ -7,12 +7,7 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: 1240px;
-    margin: 0 auto;
-}
-
-.especialidade {
+.especialidadeES {
     width: 100%;
     height: 245px;
     margin-top: 190px;
@@ -22,19 +17,19 @@
     justify-content: center;
 }
 
-.especialidade img {
+.especialidadeES img {
     width: 100%;
     height: 100%;
 }
 
-.box_conteudo_especialidade {
+.box_conteudo_especialidadeES {
     width: 532.37px;
     height: 123px;
     margin-top: 30px;
     position: absolute;
 }
 
-.box_conteudo_especialidade h1 {
+.box_conteudo_especialidadeES h1 {
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: normal;
@@ -44,7 +39,7 @@
     text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.32);
 }
 
-.corpo_especialidades {
+.corpo_especialidadesES {
     width: 100%;
     height: 1808px;
     display: flex;
@@ -54,7 +49,7 @@
     background-size: cover;
 }
 
-.form-group_especialidade {
+.form-group_especialidadeES {
     width: 1115px;
     height: 1707px;
     background: rgba(231, 231, 231, 0.81);
@@ -65,7 +60,7 @@
     align-items: center;
 }
 
-.container_especialidades {
+.container_especialidadesES {
     width: 1016px;
     height: 1526px;
     display: flex;
@@ -73,7 +68,7 @@
     flex-direction: column;
 }
 
-.form-group_especialidade h1 {
+.form-group_especialidadeES h1 {
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: normal;
@@ -82,7 +77,7 @@
     color: #008BDA;
 }
 
-.card_especialidade {
+.card_especialidadeES {
     width: 1012px;
     height: 55px;
     display: flex;
@@ -93,13 +88,13 @@
     filter: drop-shadow(4px 4px 4px rgba(0, 133, 255, 0.34));
 }
 
-.card_especialidade:hover{
+.card_especialidadeES:hover{
       color: rgb(255, 238, 4); 
       scale: 1.04;
       transition: all .2s ease-in-out;
 }
 
-.card_especialidade span {
+.card_especialidadeES span {
     font-family: 'Titillium Web';
     font-style: normal;
     font-weight: normal;

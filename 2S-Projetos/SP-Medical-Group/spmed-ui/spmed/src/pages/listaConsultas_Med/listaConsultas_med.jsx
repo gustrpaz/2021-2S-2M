@@ -73,27 +73,39 @@ export default class ListaConsultaMed extends Component {
                         <div className="container_consultas_ListaMed">
                             <h1>consultas</h1>
 
-                            <div className="box_consultas_ListaMed">
-                                <div className="info_consulta_ListaMed">
-                                    <div>
-                                        <span>Nome do Paciente: </span>
-                                        <span>Data da consulta: </span>
-                                        <span>Especialidade: </span>
-                                        <span>Situação: </span>
-                                        <span>Clínica: </span>
+                            {this.state.listaConsultas.map((consulta) => {
+                                return (
+                                    <div className="box_consultas_ListaMed">
+                                        <div className="info_consulta_ListaMed">
+                                            <div>
+                                                <span>Nome do Paciente: {consulta.idPacienteNavigation.nome}</span>
 
-                                        <div className="box_botao_ListaMed">
-                                            <button className="botao_ListaMed" type="button">Editar descrição</button>
+                                                <span>Data da consulta: {Intl.DateTimeFormat("pt-BR", {
+                                                    year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric"
+                                                }).format(new Date(consulta.dataHora))}</span>
+
+                                                <span>Especialidade: {consulta.idMedicoNavigation.idEspecialidadeNavigation.especialidades} </span>
+                                                <span>Situação: {consulta.idSituacaoNavigation.situacao1} </span>
+                                                <span>Clínica: {consulta.idMedicoNavigation.idClinicaNavigation.nomeClinica} </span>
+
+                                                <div className="box_botao_ListaMed">
+                                                    <button className="botao_ListaMed" type="button">Editar descrição</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
 
-                                <div className="desc_consulta_ListaMed">
-                                    <div>
-                                        <span>Descrição:</span>
+                                        <div className="desc_consulta_ListaMed">
+                                            <div className="span_da_Descricao">
+                                                <span>Descrição:</span>
+                                                <div className="box_da_Descricao">
+                                                    <span>{consulta.descricao}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                </div>
-                            </div>
+                                )
+                            })}
 
                             <div className="box_consultas_ListaMed">
                                 <div className="info_consulta_ListaMed">
