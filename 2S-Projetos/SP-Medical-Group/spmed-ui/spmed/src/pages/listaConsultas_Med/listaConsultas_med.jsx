@@ -8,6 +8,7 @@ import background_body from '../../assets/img/raiox.png'
 
 import "../../assets/css/listaConsultaMed.css";
 import { render } from '@testing-library/react';
+import axios from 'axios';
 
 export default class ListaConsultaMed extends Component {
     constructor(props) {
@@ -15,9 +16,20 @@ export default class ListaConsultaMed extends Component {
         this.state = {
             erroMensagem: '',
             listaConsultas: [],
-            isLoading: false
+            isLoading: false,
         }
     }
+
+    // atualizarDescricao = () => {
+    //     //id e descricao
+    //     axios.put('https://localhost:5001/api/consultas/' + idConsulta),
+    //     {}
+    // }
+
+   
+
+// ---------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------
 
     buscarConsultas = () => {
         console.log('salve agora vamos fazer a chamada para a api.');
@@ -50,7 +62,9 @@ export default class ListaConsultaMed extends Component {
 
             .catch((erro) => console.log(erro));
     };
+        
 
+    
     componentDidMount() {
         this.buscarConsultas();
     }
@@ -106,28 +120,6 @@ export default class ListaConsultaMed extends Component {
                                     </div>
                                 )
                             })}
-
-                            <div className="box_consultas_ListaMed">
-                                <div className="info_consulta_ListaMed">
-                                    <div>
-                                        <span>Nome do Paciente: </span>
-                                        <span>Data da consulta: </span>
-                                        <span>Especialidade: </span>
-                                        <span>Situação: </span>
-                                        <span>Clínica: </span>
-
-                                        <div className="box_botao_ListaMed">
-                                            <button className="botao_ListaMed" type="button">Editar descrição</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="desc_consulta_ListaMed">
-                                    <div>
-                                        <span>Descrição:</span>
-                                    </div>
-                                </div>
-                            </div>
 
                         </div>
                     </section>

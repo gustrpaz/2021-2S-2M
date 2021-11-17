@@ -7,8 +7,6 @@ import Header from '../../components/header/header'
 import "../../assets/css/cadastroConsulta.css"
 
 import background_section from '../../assets/img/background section.png'
-import funcaoRedirecionar from '../../components/funcao redirecionar/funcao_redirect';
-
 
 
 export default class Cadastrar extends Component {
@@ -20,14 +18,16 @@ export default class Cadastrar extends Component {
             idSituacao: 0,
             idClinica: 0,
             dataHora: new Date(),
+            descricao: '',
 
             listaPacientes: [],
             listaMedicos: [],
             listaClinicas: [],
             listaSituacao: [],
-            isLoading: false
+            isLoading: false,
         }
     }
+    
 
     buscarPacientes = () => {
         axios('http://localhost:5000/api/pacientes', {
@@ -91,7 +91,8 @@ export default class Cadastrar extends Component {
             idMedico: this.state.idMedico,
             idSituacao: this.state.idSituacao,
             idClinica: this.state.idClinica,
-            dataHora: this.state.dataHora
+            dataHora: this.state.dataHora,
+            descricao: this.state.descricao
         }
         this.setState({ isLoading: true })
         axios.post('http://localhost:5000/api/consultas', consulta, {
@@ -108,7 +109,8 @@ export default class Cadastrar extends Component {
                         idMedico: 0,
                         idSituacao: 0,
                         idClinica: 0,
-                        dataHora: new Date()
+                        dataHora: new Date(),
+                        descricao: ''
                     })
                 }
             })
@@ -163,7 +165,7 @@ export default class Cadastrar extends Component {
 
                                 <select className="input-form_cadastro" name="idMedico" value={this.state.idMedico} onChange={this.atualizaStateCampo}>
                                     <option value="0" selected disabled>
-                                        Selecione o Medico
+                                        Selecione o Médico
                                     </option>
 
                                     {this.state.listaMedicos.map((tema) => {
@@ -179,7 +181,7 @@ export default class Cadastrar extends Component {
 
                                 <select className="input-form_cadastro" name="idClinica" value={this.state.idClinica} onChange={this.atualizaStateCampo}>
                                     <option value="0" selected disabled>
-                                        Selecione a Clinica
+                                        Selecione a Clínica
                                     </option>
 
                                     {this.state.listaClinicas.map((tema) => {
@@ -206,8 +208,13 @@ export default class Cadastrar extends Component {
                                     })}
                                 </select>
 
-                        
+
                                 <input type="datetime-local" className="input-form_cadastro" name="dataHora" value={this.state.dataHora} onChange={this.atualizaStateCampo} />
+
+
+                            <input placeholder="Descrição" name="descricao" value={this.state.descricao} className="Adc_descricao" onChange={this.atualizaStateCampo}>
+                                 
+                            </input>
 
                                 <div className="box_button_cadastro">
                                     <button type="submit" className="botao_cadastro">

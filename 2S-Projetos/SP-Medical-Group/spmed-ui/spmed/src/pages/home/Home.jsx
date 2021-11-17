@@ -91,12 +91,18 @@ export default function Home() {
                          <div className="box_consultas">
                               <div className="box_conteudo_section">
 
-                                   <button className="box1" onClick={redirecionar}>
+                                   <Link to="/listaConsultasMedTeste"><button className="box1">
 
                                         <a href="">Consultas</a>
-                                        {/* <Link to="/listaConsulta"><a href="btn_consulta">Consultas</a></Link> */}
+                                       
                                         <hr/>
-                                   </button>
+                                   </button></Link>
+                                   {/* <button className="box1" onClick={redirecionar}>
+
+                                        <a href="">Consultas</a>
+                                       
+                                        <hr/>
+                                   </button> */}
 
                                    <div className="box2">
                                              <a href="#quemsomos">Unidade</a>
@@ -113,24 +119,24 @@ export default function Home() {
                                              <span>Especialidades</span>
                                         </div>
                                         <div className="box_conteudo_especialidade">
-                                             <div className="caixas_especialidade">
+                                             <Link to="/especialidade"><div className="caixas_especialidade">
                                                   <span>Cardiologia</span>
-                                             </div>
-                                             <div className="caixas_especialidade">
+                                             </div></Link>
+                                             <Link to="/especialidade"><div className="caixas_especialidade">
                                                   <span>Angiologia</span>
-                                             </div>
-                                             <div className="caixas_especialidade">
+                                             </div></Link>
+                                             <Link to="/especialidade"><div className="caixas_especialidade">
                                                   <span>Urulogia</span>
-                                             </div>
-                                             <div className="caixas_especialidade">
+                                             </div></Link>
+                                             <Link to="/especialidade"><div className="caixas_especialidade">
                                                   <span>Pediatra</span>
-                                             </div>
-                                             <div className="caixas_especialidade">
+                                             </div></Link>
+                                             <Link to="/especialidade"><div className="caixas_especialidade">
                                                   <span>Cirurgia</span>
-                                             </div>
-                                             <div className="caixas_especialidade">
+                                             </div></Link>
+                                             <Link to="/especialidade"><div className="caixas_especialidade">
                                                   <Link to="/especialidade"><span>Psquiatria</span></Link>
-                                             </div>
+                                             </div> </Link>
                                         </div>
                                         <div className="box_VerTodas">
                                              <Link to="/especialidade"><span>Ver todas</span></Link>

@@ -173,7 +173,7 @@
     display: flex;
     
 }
-.box_da_Descricao span{
+.box_da_Descricao textarea{
     font-family: 'Titillium Web';
     font-style: normal;
     font-weight: normal;

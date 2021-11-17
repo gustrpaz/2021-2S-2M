@@ -46,7 +46,7 @@
 
 .corpo_consulta_cadastro {
     width: 100%;
-    height: 800px;
+    height: 870px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,7 +56,7 @@
 
 .form-group_cadastro {
     width: 906px;
-    height: 698px;
+    height: 740px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -108,7 +108,7 @@
 
 .input-form_cadastro {
     width: 696px;
-    height: 50px;
+    height: 120px;
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
@@ -119,6 +119,21 @@
     margin-bottom: 35px;
     color: black;
     font-family: 'Titillium Web', sans-serif;
+}
+
+.Adc_descricao {
+    width: 696px;
+    height: 160px;
+    display: flex;
+    border-radius: 11px;
+    padding: 0px 20px;
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background-color: white;
 }
 
 .botao_cadastro {
@@ -139,7 +154,7 @@
 .box_button_cadastro {
     width: 100%;
     height: 100px;
-    margin-top: 15px;
+    margin-top: 45px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,8 +169,6 @@
 .ver_todas_cadastro {
     height: 40px;
     margin-top: 20px;
-    
-
     text-decoration: none;
     font-family: 'Titillium Web';
     font-style: normal;

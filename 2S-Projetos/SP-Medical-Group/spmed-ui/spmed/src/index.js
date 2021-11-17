@@ -1,7 +1,8 @@
+import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { parseJwt, usuarioAutenticado } from "../src/services/auth"
 
 import {
   Route,
@@ -16,17 +17,51 @@ import ListaConsulta from './pages/listaConsulta_Adm/ListaConsulta'
 import CadastroConsulta from './pages/cadastroConsulta/cadastroConsulta';
 import NotFound from './pages/notFound/notFound'
 
-import './index.css';
 import ListaConsultaMed from './pages/listaConsultas_Med/listaConsultas_med.jsx';
 import ListaConsultaPac from './pages/listaConsultas_Pac/listaConsultas_pac.jsx';
 import Especialidade from './pages/especialidades/especialidades';
-// ReactDOM.render(
-//   <React.StrictMode>
-//    <Login />
-//     {/* <Home /> */}
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
+import Descricao from './pages/listaConsultasMedTeste/listaConsultas_MedTeste';
+
+
+const PermissaoAdm = ({ component: Component }) => (
+  <Route
+    render={(props) =>
+      usuarioAutenticado() && parseJwt().role === '1' ? (
+        // operador spread
+        <Component {...props} />
+      ) : (
+        <Redirect to="login" />
+      )
+    }
+  />
+);
+
+const PermissaoMedico = ({ component: Component }) => (
+  <Route
+    render={(props) =>
+      usuarioAutenticado() && parseJwt().role === '2' ? (
+        // operador spread
+        <Component {...props} />
+      ) : (
+        <Redirect to="login" />
+      )
+    }
+  />
+);
+
+const PermissaoPaciente = ({ component: Component }) => (
+  <Route
+    render={(props) =>
+      usuarioAutenticado() && parseJwt().role === '3' ? (
+        // operador spread
+        <Component {...props} />
+      ) : (
+        <Redirect to="login" />
+      )
+    }
+  />
+);
+
 
 const routing = (
   <Router>
@@ -35,12 +70,15 @@ const routing = (
         <Route exact path="/" component={Home} /> {/* Home */}
         <Route path="/login" component={Login} /> {/* Login */}
         <Route path="/especialidade" component={Especialidade} /> {/* Especialidade */}
-        <Route path="/listaConsulta" component={ListaConsulta} />  {/* Listar Consulta */}
-        <Route path="/listaConsultaMed" component={ListaConsultaMed} /> {/* Listar Consultas médico */}
-        <Route path="/listaConsultaPac" component={ListaConsultaPac} /> {/* Listar Consultas paciente */}
-        <Route path="/cadastroConsulta" component={CadastroConsulta} /> {/* Cadastrar consulta */}
+        <PermissaoAdm path="/listaConsulta" component={ListaConsulta} />  {/* Listar Consulta */}
+        <PermissaoMedico path="/listaConsultaMed" component={ListaConsultaMed} /> {/* Listar Consultas médico */}
+        <PermissaoPaciente path="/listaConsultaPac" component={ListaConsultaPac} /> {/* Listar Consultas paciente */}
+        <PermissaoAdm path="/cadastroConsulta" component={CadastroConsulta} /> {/* Cadastrar consulta */}
         <Route path="/notFound" component={NotFound} /> {/* Not Found */}
         <Redirect to="/notFound" /> {/* Redireciona para Not Found caso não encontre nenhuma rota */}
+
+
+        <Route path="/listaConsultasMedTeste" component={Descricao} />
       </Switch>
     </div>
   </Router>
