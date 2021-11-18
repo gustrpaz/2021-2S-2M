@@ -93,7 +93,7 @@ export default function Home() {
 
                                    <Link to="/listaConsultasMedTeste"><button className="box1">
 
-                                        <a href="">Consultas</a>
+                                        <span>Consultas</span>
                                        
                                         <hr/>
                                    </button></Link>
