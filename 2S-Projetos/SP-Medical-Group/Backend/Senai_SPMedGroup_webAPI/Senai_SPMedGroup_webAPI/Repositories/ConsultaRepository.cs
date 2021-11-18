@@ -165,6 +165,7 @@ namespace Senai_SPMedGroup_webAPI.Repositories
                 .Where(x => x.IdMedico == IdMedico)
                 .Select(x => new Consulta
                 {
+                    IdConsulta = x.IdConsulta,
                     IdPaciente = x.IdPaciente,
                     IdMedico = x.IdMedico,
                     IdSituacao = x.IdSituacao,
@@ -229,22 +230,15 @@ namespace Senai_SPMedGroup_webAPI.Repositories
             ctx.SaveChanges();
         }
 
-        public void AlterarDescricao(string descricao, int id, int IdUsuario)
-        {
-            Consulta consultaBuscado = BuscarId(id);
-            // ctx medico first or default == idusuario
-            
-           Medico medico = ctx.Medicos.FirstOrDefault(x => x.IdUsuario == IdUsuario);
 
-            if (consultaBuscado.IdMedico != medico.IdMedico)
-            {
-                throw new Exception("somente o médico titular tem permissão para alterar a descrição da consulta!");
-            }
+        public void AlterarDescricao(string descricao, int IdConsulta)
+        {
+            Consulta consultaBuscado = BuscarId(IdConsulta);
 
             if (descricao != null)
             {
                 consultaBuscado.Descricao = descricao;
-
+               
                 ctx.Consultas.Update(consultaBuscado);
 
                 ctx.SaveChanges();

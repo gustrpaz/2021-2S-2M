@@ -62,6 +62,6 @@ namespace Senai_SPMedGroup_webAPI.Interfaces
         /// <param name="consultaAtualizada"></param>
         void SituacaoConsulta(int IdConsulta, Consulta consultaAtualizada);
 
-        void AlterarDescricao(string descricao, int id, int IdUsuario);
+        void AlterarDescricao(string descricao, int IdUsuario);
     }
 }

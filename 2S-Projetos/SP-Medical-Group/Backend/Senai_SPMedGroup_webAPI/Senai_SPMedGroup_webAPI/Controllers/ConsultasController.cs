@@ -253,16 +253,14 @@ namespace Senai_SPMedGroup_webAPI.Controllers
             }
         }
 
-
-        [Authorize(Roles = "1,2")]
+        [Authorize(Roles = "2")]
         [HttpPatch("AlterarDescricao/{IdConsulta}")]
         public IActionResult AlterarDescricao(Consulta consultaAtt, int IdConsulta)
         {
             try
             {
                 Consulta consultaBuscada = _consultaRepository.BuscarId(IdConsulta);
-                int IdUsuario = Convert.ToInt32(HttpContext.User.Claims.First(c => c.Type == JwtRegisteredClaimNames.Jti).Value);
-                
+                int IdMedico = Convert.ToInt32(HttpContext.User.Claims.First(c => c.Type == JwtRegisteredClaimNames.Jti).Value);
                 if (consultaAtt.Descricao == null)
                 {
                     return BadRequest(new
@@ -270,6 +268,7 @@ namespace Senai_SPMedGroup_webAPI.Controllers
                         Mensagem = "É necessário informar a descrição!"
                     });
                 }
+
 
                 if (_consultaRepository.BuscarId(IdConsulta) == null)
                 {
@@ -279,8 +278,8 @@ namespace Senai_SPMedGroup_webAPI.Controllers
                     });
                 }
 
-    
-                _consultaRepository.AlterarDescricao(consultaAtt.Descricao, IdConsulta, IdUsuario);
+               
+                _consultaRepository.AlterarDescricao(consultaAtt.Descricao, IdConsulta);
                 return StatusCode(200, new
                 {
                     Mensagem = "A descrição da consulta foi alterada com sucesso!",

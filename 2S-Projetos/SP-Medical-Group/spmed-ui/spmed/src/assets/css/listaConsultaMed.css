@@ -66,6 +66,7 @@
     font-weight: normal;
     font-size: 76px;
     margin-top: 35px;
+    margin-bottom: 30px;
     line-height: 80px;
     color: #0085FF;
 }
@@ -96,7 +97,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
 }
 
 .info_consulta_ListaMed span {
@@ -117,7 +117,7 @@
     justify-content: center;
 }
 
-.botao_ListaMed:hover{
+.botao_ListaMed:hover {
     scale: 1.07;
     transition: all .2s ease-in-out;
 }
@@ -148,13 +148,11 @@
     border-radius: 10px;
 }
 
-
-.span_da_Descricao{
+.span_da_Descricao {
     width: 444px;
     height: 388px;
     background: rgba(187, 187, 187, 0.49);
     border-radius: 10px;
-
 }
 
 .span_da_Descricao span {
@@ -171,13 +169,226 @@
     width: 415px;
     height: 351px;
     display: flex;
-    
 }
-.box_da_Descricao textarea{
+
+.box_da_Descricao textarea {
     font-family: 'Titillium Web';
     font-style: normal;
     font-weight: normal;
     font-size: 23px;
     line-height: 30px;
     color: #000000;
+}
+
+/* ------------------------ */
+
+
+.bodyConsultasMed{
+    width: 900px;
+}
+
+
+tabela-lista td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+}
+
+#tabela-lista td, #tabela-lista th {
+    text-align: left;
+    border: 1px solid #f6f6f6;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+#tabela-lista tr:nth-child(even) {
+    background-color: #fff;
+}
+
+#tabela-lista tr:hover {
+    background-color: #ddd;
+}
+
+#tabela-lista th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0085FF;
+    color: white;
+}
+
+.conteudoPrincipal-btn {
+    border: none;
+    color: white;
+    margin: 15px auto;
+    border-radius: 3px;
+    width: 50%;
+    padding: 10px 52px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 10px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.conteudoPrincipal-btn-cadastro {
+    background-color: #0085FF;
+    color: #fff;
+    letter-spacing: 6px;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+    box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+}
+
+.conteudoPrincipal-btn-cadastro:hover {
+    background-color: #fff;
+    color: #0085FF;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+    box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+}
+
+.conteudoPrincipal-cadastro-titulo {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* CADASTROS - EVENTOS */
+
+#conteudoPrincipal-lista {
+    /* background-color: #ffffff; */
+    min-height: 100px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#tabela-lista {
+    font-weight: lighter;
+    border-collapse: collapse;
+    text-align: left;
+    table-layout: fixed;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+#tabela-lista td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+}
+
+#tabela-lista td, #tabela-lista th {
+    text-align: left;
+    border: 1px solid #f6f6f6;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+#tabela-lista tr:nth-child(even) {
+    background-color: #fff;
+}
+
+#tabela-lista tr:hover {
+    background-color: #ddd;
+}
+
+#tabela-lista th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0085FF;
+    color: white;
+}
+
+.paginacao {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.paginacao a {
+    font-size: 12px;
+    color: #868686;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#conteudoPrincipal-cadastro {
+    width: 800px;
+    height: 270px;
+    min-height: 242px;
+    margin-top: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-flow: column;
+    margin-bottom: 100px;
+    background-color: #ffffff;
+}
+
+#conteudoPrincipal-cadastro .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteudoPrincipal-cadastro input {
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+    background-color: #F8F8F8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    border: none;
+    height: 34px;
+    font-size: 12px;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+#conteudoPrincipal-cadastro select {
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+    background-color: #F8F8F8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    border: none;
+    height: 34px;
+    font-size: 12px;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+#conteudoPrincipal-cadastro textarea {
+    text-align: center;
+    font-size: 12px;
+    resize: none;
+    width: 50%;
+    background-color: #F8F8F8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    border: none;
+    margin: 10px;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.box_editarDesc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
 }
