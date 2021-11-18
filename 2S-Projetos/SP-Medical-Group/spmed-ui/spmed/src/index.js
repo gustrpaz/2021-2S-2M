@@ -17,10 +17,9 @@ import ListaConsulta from './pages/listaConsulta_Adm/ListaConsulta'
 import CadastroConsulta from './pages/cadastroConsulta/cadastroConsulta';
 import NotFound from './pages/notFound/notFound'
 
-import ListaConsultaMed from './pages/listaConsultas_Med/listaConsultas_med.jsx';
 import ListaConsultaPac from './pages/listaConsultas_Pac/listaConsultas_pac.jsx';
 import Especialidade from './pages/especialidades/especialidades';
-import Medico from './pages/listaConsultasMedTeste/listaConsultasMedTeste';
+import Medico from './pages/listaConsultasMed/listaConsultasMed';
 
 
 const PermissaoAdm = ({ component: Component }) => (
@@ -71,10 +70,9 @@ const routing = (
         <Route path="/login" component={Login} /> {/* Login */}
         <Route path="/especialidade" component={Especialidade} /> {/* Especialidade */}
         <PermissaoAdm path="/listaConsulta" component={ListaConsulta} />  {/* Listar Consulta */}
-        {/* <PermissaoMedico path="/listaConsultaMed" component={ListaConsultaMed} /> Listar Consultas médico */}
+        <PermissaoMedico path="/listaConsultasMed" component={Medico} /> {/* Listar Consultas Médicos */}
         <PermissaoPaciente path="/listaConsultaPac" component={ListaConsultaPac} /> {/* Listar Consultas paciente */}
         <PermissaoAdm path="/cadastroConsulta" component={CadastroConsulta} /> {/* Cadastrar consulta */}
-        <PermissaoMedico path="/listaConsultasMedTeste" component={Medico} />
         <Route path="/notFound" component={NotFound} /> {/* Not Found */}
         <Redirect to="/notFound" /> {/* Redireciona para Not Found caso não encontre nenhuma rota */}
 

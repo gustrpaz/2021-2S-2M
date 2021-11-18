@@ -322,6 +322,15 @@ header {
     cursor: pointer;
 }
 
+.box1 span {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 71px;
+    line-height: 85px;
+    color: #0085FF;
+}
+
 .box1:hover {
     scale: 1.1;
     transition: all .2s ease-in-out;

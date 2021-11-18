@@ -106,7 +106,7 @@ export default function Medico() {
                                     <div className="box_editarDesc">
 
                                         <select name="paciente" id="" onChange={(evt) => setIdConsultaAlterada(evt.target.value)}>
-                                            <option value="#">Escolha um consulta</option>
+                                            <option value="#">Escolha uma consulta</option>
                                             {
                                                 listaConsultas.map((event) => {
 

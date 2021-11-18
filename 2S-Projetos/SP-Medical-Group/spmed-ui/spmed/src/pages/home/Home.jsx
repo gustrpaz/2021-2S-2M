@@ -91,18 +91,13 @@ export default function Home() {
                          <div className="box_consultas">
                               <div className="box_conteudo_section">
 
-                                   <Link to="/listaConsultasMedTeste"><button className="box1">
+                                 <button onClick={redirecionar} className="box1">
 
                                         <span>Consultas</span>
                                        
                                         <hr/>
-                                   </button></Link>
-                                   {/* <button className="box1" onClick={redirecionar}>
-
-                                        <a href="">Consultas</a>
-                                       
-                                        <hr/>
-                                   </button> */}
+                                   </button>
+                         
 
                                    <div className="box2">
                                              <a href="#quemsomos">Unidade</a>
