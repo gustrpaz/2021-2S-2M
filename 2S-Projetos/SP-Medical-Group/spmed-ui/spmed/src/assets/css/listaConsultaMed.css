@@ -190,6 +190,7 @@ tabela-lista td {
     text-align: left;
     border: 1px solid #f6f6f6;
     padding: 8px;
+    font-size: 17px;
     white-space: pre-wrap;
 }
 
