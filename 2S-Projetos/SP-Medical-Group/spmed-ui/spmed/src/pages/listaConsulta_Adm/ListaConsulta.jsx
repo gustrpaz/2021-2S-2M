@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios';
 import { Component } from 'react';
 import Footer from '../../components/footer/footer'
 import Header from '../../components/header/header'
@@ -14,9 +15,27 @@ export default class ListaConsulta extends Component {
         this.state = {
             erroMensagem: '',
             listaConsultas: [],
+            idSituacao: 0,
+            listaSituacao: [],
             isLoading: false
         }
     }
+
+    buscarSituacao = () => {
+        axios('https://localhost:5001/api/situacoes', {
+            headers: {
+                Authorization: 'Bearer ' + localStorage.getItem('usuario-login')
+            }
+        }).then(resposta => {
+            if (resposta.status === 200) {
+                this.setState({ listaSituacao: resposta.data })
+            }
+        }).catch((erro) => console.log(erro))
+    }
+
+    atualizaStateCampo = (campo) => {
+        this.setState({ [campo.target.name]: campo.target.value });
+    };
 
     buscarConsultas = () => {
         console.log('salve agora vamos fazer a chamada para a api.');
@@ -31,7 +50,7 @@ export default class ListaConsulta extends Component {
 
         })
             //por padrao ele sempre inicia como GET.
-           
+
             .then((resposta) => resposta.json())
 
             //.then( dados => console.log(dados.json()))
@@ -44,7 +63,7 @@ export default class ListaConsulta extends Component {
 
             // Atualiza o state listaTiposEventos com os dados obtidos em formato json.
             .then((dados) => this.setState({ listaConsultas: dados }))
-         
+
             //caso ocorre algum erro, mostra no console do navegador
 
             .catch((erro) => console.log(erro));
@@ -52,6 +71,7 @@ export default class ListaConsulta extends Component {
 
     componentDidMount() {
         this.buscarConsultas();
+        this.buscarSituacao();
     }
 
 
@@ -79,14 +99,27 @@ export default class ListaConsulta extends Component {
                                             <div>
                                                 {/* <span>Data da consulta: {consulta.dataHora} </span> */}
 
-                                                <span>Data da consulta:{Intl.DateTimeFormat("pt-BR",{
-                                                year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric"
-                                            }).format(new Date(consulta.dataHora))}</span>
+                                                <span>Data da consulta:{Intl.DateTimeFormat("pt-BR", {
+                                                    year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric"
+                                                }).format(new Date(consulta.dataHora))}</span>
 
                                                 <span>Especialidade: {consulta.idMedicoNavigation.idEspecialidadeNavigation.especialidades} </span>
                                                 <span>Médico: {consulta.idMedicoNavigation.nomeMedico} </span>
                                                 <span>Situação: {consulta.idSituacaoNavigation.situacao1} </span>
                                                 <span>Clínica: {consulta.idMedicoNavigation.idClinicaNavigation.nomeClinica} </span>
+                                                <select className="input_situacao" name="idSituacao" value={this.state.idSituacao} onChange={this.atualizaStateCampo}>
+                                                    <option value="0" selected disabled>
+                                                        Selecione a Situação
+                                                    </option>
+
+                                                    {this.state.listaSituacao.map((tema) => {
+                                                        return (
+                                                            <option key={tema.idSituacao} value={tema.idSituacao}>
+                                                                {tema.situacao1}
+                                                            </option>
+                                                        );
+                                                    })}
+                                                </select>
                                             </div>
                                         </div>
 

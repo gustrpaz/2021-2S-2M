@@ -73,8 +73,8 @@ const routing = (
         <PermissaoMedico path="/listaConsultasMed" component={Medico} /> {/* Listar Consultas Médicos */}
         <PermissaoPaciente path="/listaConsultaPac" component={ListaConsultaPac} /> {/* Listar Consultas paciente */}
         <PermissaoAdm path="/cadastroConsulta" component={CadastroConsulta} /> {/* Cadastrar consulta */}
-        <Route path="/notFound" component={NotFound} /> {/* Not Found */}
         <Redirect to="/notFound" /> {/* Redireciona para Not Found caso não encontre nenhuma rota */}
+        <Route path="/notFound" component={NotFound} /> {/* Not Found */}
 
 
        

@@ -25,7 +25,7 @@ export default function Home() {
                    break;
 
                case "2":
-                   history.push("/listaConsultaMed")
+                   history.push("/listaConsultasMed")
                    console.log("estou logado: " + usuarioAutenticado())
                    break;
 
