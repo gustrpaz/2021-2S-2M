@@ -1,0 +1,14 @@
+USE ROMAN;
+GO
+
+SELECT * FROM TipoUsuario;
+GO
+
+SELECT * FROM Usuario;
+GO
+
+SELECT * FROM Tema;
+GO
+
+SELECT * FROM Projeto;
+GO

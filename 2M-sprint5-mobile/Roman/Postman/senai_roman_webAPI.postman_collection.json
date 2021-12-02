@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "a7646a9e-0114-4ba3-b8fe-cea1ffeae08a",
+		"name": "senai_roman_webAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Projetos",
+			"item": [
+				{
+					"name": "Projeto.listarTodos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByb2Zlc3NvckBnbWFpbC5jb20iLCJqdGkiOiIyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsInJvbGUiOiIyIiwiZXhwIjoxNjM4MTg2MTUxLCJpc3MiOiJyb21hbi53ZWJBUEkiLCJhdWQiOiJyb21hbi53ZWJBUEkifQ.KCfDaqV2WciJ3hjw0TgnEtqj8mgOEuvI-BfItreEAXI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/projetos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"projetos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Projeto.cadastrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByb2Zlc3NvckBnbWFpbC5jb20iLCJqdGkiOiIyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsInJvbGUiOiIyIiwiZXhwIjoxNjM4MTg2MTUxLCJpc3MiOiJyb21hbi53ZWJBUEkiLCJhdWQiOiJyb21hbi53ZWJBUEkifQ.KCfDaqV2WciJ3hjw0TgnEtqj8mgOEuvI-BfItreEAXI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idTema\": 1,\r\n        \"nomeProjeto\": \"Barroco tela\",\r\n        \"descricaoProjeto\": \"Pintar uma tela barroca usando materiais, instrumentos e substancias inusitadas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/projetos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"projetos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Usuario.Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"professor@gmail.com\",\r\n  \"senha\": \"987654321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
