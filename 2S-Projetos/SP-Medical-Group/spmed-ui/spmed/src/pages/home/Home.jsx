@@ -15,33 +15,6 @@ export default function Home() {
 
      let history = useHistory();
 
-//      var myIndex = 0;
-//     carousel();
-
-//     function carousel() {
-//         var i;
-//         var x = document.getElementsByClassName("mySlides");
-//         for (i = 0; i < x.length; i++) {
-//             x[i].style.display = "none";
-//         }
-//         myIndex++;
-//         if (myIndex > x.length) {
-//             myIndex = 1
-//         }
-//         x[myIndex - 1].style.display = "flex";
-//         setTimeout(carousel, 6000);
-//     }
-
-//     function BotaoDoMenu() {
-//             var menu = document.getElementById("links");
-//             if (menu.style.display == "flex") {
-//                 // Esconda o menu 
-//                 menu.style.display = "none";
-//             } else {
-//                 //Mostre o menu
-//                 menu.style.display = "flex"
-//             }
-//         }
 
      function redirecionar(){
           console.log()
@@ -76,7 +49,8 @@ export default function Home() {
                     <div id="home" className="container_banner banner mySlides fade">
                          <img src= {fundo1_banner} alt="plano de fundo bebê" />
                          <div className="box_conteudo">
-                              <h1>Welcome to spmedicalgroup</h1>
+                              <h1>Welcome to</h1>
+                              <h1>spmedicalgroup</h1>
                          </div>
                     </div>
 

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -209,9 +210,9 @@ header {
     margin-right: 55px;
 }
 
-.banner2 .conteudo_banner {
+/* .banner2 .conteudo_banner {
     margin-right: 55px;
-}
+} */
 
 .banner {
     align-items: center;
@@ -271,6 +272,7 @@ header {
     from {
         opacity: .7;
     }
+
     to {
         opacity: 5;
     }
@@ -280,6 +282,7 @@ header {
     from {
         opacity: .7;
     }
+
     to {
         opacity: 5;
     }
@@ -618,6 +621,21 @@ ul.none {
 }
 
 @media(min-width: 992px) {
+<<<<<<< HEAD
+
+
+    .container {
+        width: unset;
+        margin: 0 auto;
+    }
+
+    .container_header {
+        width: unset;
+        height: 178px;
+    }
+
+=======
+>>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
     header {
         height: 178px;
         width: 100%;
@@ -627,6 +645,13 @@ ul.none {
         background-color: #09ff00;
     }
 
+<<<<<<< HEAD
+    .menu_header_mobile {
+        display: none;
+    }
+
+=======
+>>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
     .container_header {
         width: 100%;
         height: 178px;
@@ -771,6 +796,10 @@ ul.none {
 }
 
 @media(min-width: 600px) {
+<<<<<<< HEAD
+
+=======
+>>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
     .container {
         width: 80vw;
         margin: 0px;
@@ -785,7 +814,11 @@ ul.none {
     }
 
     .container_header {
+<<<<<<< HEAD
+        width: 100%;
+=======
         width: 600px;
+>>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
         height: 178.78px;
         display: flex;
         align-items: center;
@@ -851,7 +884,11 @@ ul.none {
 
     .container_section {
         height: 446px;
+<<<<<<< HEAD
+
+=======
       
+>>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
     }
 
     .box_consultas {
@@ -859,14 +896,22 @@ ul.none {
         height: 447px;
         background: #008BDA;
         clip-path: none;
+<<<<<<< HEAD
+
+=======
      
+>>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
     }
 
     .box_conteudo_section {
         height: 315px;
         display: flex;
         flex-direction: column;
+<<<<<<< HEAD
+
+=======
        
+>>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
     }
 
     .box1 {
@@ -879,16 +924,131 @@ ul.none {
         height: 116px;
     }
 
+<<<<<<< HEAD
+    .container_especialidades {
+=======
     .container_especialidades{
+>>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
         width: 100%;
         height: 906px;
     }
 
+<<<<<<< HEAD
+    .container_interno {
+=======
     .container_interno{
+>>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
         width: 100%;
         height: 800px;
     }
 
+<<<<<<< HEAD
+    .box_conteudo_especialidade {
+        width: unset;
+        display: flex;
+        height: unset;
+        flex-direction: column;
+    }
+
+    .box_especialidade {
+        margin-right: 0%;
+    }
+
+    .box_especialidade span {
+        font-size: 69px;
+    }
+
+    .caixas_especialidade {
+        width: 348px;
+        height: 96px;
+    }
+
+    .box_VerTodas {
+        width: 128px;
+        height: 30px;
+        margin-right:unset;
+    }
+
+    .img_quemSomos img {
+       display: none;
+    }
+
+    footer {
+        width: 100%;
+        height: 388px;
+       
+    }
+    
+    .container_footer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: rgba(0, 133, 255, 0.43);
+    }
+    
+    .box_footer {
+        width: 100%;
+        height: 223px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .links_uteis {
+       display: none;
+    }
+    
+    .links_uteis a {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 29px;
+        line-height: 44px;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    
+    ul.none {
+        list-style-type: none;
+    }
+    
+    .direitos {
+        width: 371px;
+        height: 97px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .direitos span {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 29px;
+        line-height: 44px;
+        color: #FFFFFF;
+    }
+    
+    .Copyright {
+        width: 388px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .Copyright span {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 44px;
+        color: #FFFFFF;
+=======
     .box_conteudo_especialidade{
         display: flex;
         flex-direction: column;
@@ -900,6 +1060,7 @@ ul.none {
     
     .box_especialidade span{
         font-size: 69px;
+>>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
     }
 
 
