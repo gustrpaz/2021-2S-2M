@@ -18,8 +18,8 @@ export default class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: 'helena.souza@spmedicalgroup.com.br',
-      senha: '111',
+      email: '',
+      senha: '',
     };
   }
   //como vamos trabalhar com assync storage,

@@ -21,20 +21,18 @@ class Consultas extends Component {
     };
 
     // Define a função que faz a chamada pra api e traz os projetos 
-    buscarProjetos = async () => {
+    buscarConsultas = async () => {
         try {
             const token = await AsyncStorage.getItem('userToken');
 
-            const resposta = await api.get('/consultas/minhasmed', {
+            const resposta = await api.get('/consultas/minhasMobile', {
                 headers: {
                     Authorization: 'Bearer ' + token,
                 },
             });
             if (resposta.status === 200) {
-                console.warn('chegou')
                 const dadosDaApi = resposta.data;
                 this.setState({ listaConsultas: dadosDaApi });
-                console.warn(this.state.listaConsultas)
             }
         } catch (error) {
             console.warn(error);
@@ -43,7 +41,7 @@ class Consultas extends Component {
 
 
     componentDidMount() {
-        this.buscarProjetos();
+        this.buscarConsultas();
     }
 
     render() {
@@ -68,7 +66,7 @@ class Consultas extends Component {
 
                 </View>
 
-               
+
 
 
                 {/* Corpo - Body */}
@@ -89,15 +87,21 @@ class Consultas extends Component {
         <View style={styles.cardConsulta}>
             <View style={styles.flatItemRow}>
                 <View style={styles.flatItemContainer}>
-                    <Text style={styles.flatItemTitle}>{(item.idPaciente)}</Text>
-                    <View style={styles.containerCard}>
-                        <View style={styles.box_descricao}>
-                            {/* <Text style={styles.descricao}>{item.descricao}</Text> */}
+                    <Text style={styles.flatItemTitle}>Nome do Paciente:<Text style={styles.valores}> {(item.idPacienteNavigation.nome)}</Text></Text>
+                    <Text style={styles.flatItemTitle}>Data: <Text style={styles.valores}>{Intl.DateTimeFormat("pt-BR", {
+                                year: 'numeric', month: 'numeric', day: 'numeric',
+                                hour: 'numeric', minute: 'numeric',
+                                hour12: true                                                
+                            }).format(new Date(item.dataHora))}</Text>
+        </Text>
+                    <Text style={styles.flatItemTitle}>Especialidade: <Text style={styles.valores}>{(item.idMedicoNavigation.idEspecialidadeNavigation.especialidades)}</Text></Text>
+                    <Text style={styles.flatItemTitle}>Situação: <Text style={styles.valores}>{(item.idSituacaoNavigation.situacao1)}</Text></Text>
+                    <Text style={styles.flatItemTitle}>Clínica: <Text style={styles.valores}>{(item.idMedicoNavigation.idClinicaNavigation.nomeClinica)}</Text></Text>
+                    <View style={styles.box_descricao}>
+                    <Text style={styles.flatItemTitle}>Descrição: <Text style={styles.valores}>{(item.descricao)}</Text></Text>
                         </View>
-
-
-                    </View>
-
+                  
+                
                 </View>
             </View>
         </View>
@@ -109,12 +113,19 @@ const styles = StyleSheet.create({
 
     cardConsulta: {
         width: 384,
-        height: 300,
+       
         backgroundColor: '#FFFFFF',
         borderRadius: 10,
         marginBottom: 20,
     },
 
+    valores:{
+        fontFamily: 'Titillium Web',
+        fontStyle: 'normal',
+        fontSize: 23,
+        lineHeight: 35,
+        color: '#0085FF',
+    },
 
     // ------------------------------
 
@@ -159,19 +170,10 @@ const styles = StyleSheet.create({
 
     cardProjeto: {
         width: 390,
-        borderRadius: 20,
         marginTop: 20,
         marginBottom: 20,
+        borderRadius: 20,
         backgroundColor: '#3DB0F0',
-    },
-
-    containerCard: {
-        width: '100%',
-        alignItems: 'center',
-        justifyContent: 'space-around',
-        flexDirection: 'row',
-
-        // backgroundColor: 'green',
     },
 
     container_titulo: {
@@ -185,7 +187,7 @@ const styles = StyleSheet.create({
     txtTitulo: {
         fontSize: 37,
         color: '#009DF5',
-        
+
     },
     // conteúdo da lista
     main: {
@@ -222,37 +224,24 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     flatItemTitle: {
-        fontSize: 27,
-        color: '#000000',
+        lineHeight: 35,
         marginLeft: 15,
-    },
-
-    boxLapis: {
-        width: 160,
-        height: 110,
-        alignItems: 'center',
-
-        // backgroundColor: 'blue',
-    },
-
-    lapis: {
-        width: 70,
-        height: 70,
+        marginRight:5,
+        marginBottom:4,
+        marginTop: 4,
+        fontFamily: 'Titillium Web',
+        fontStyle: 'normal',
+        fontSize: 23,
+        color: '#022A92',
     },
 
     box_descricao: {
-        width: 215,
+        width: '100%',
         justifyContent: 'space-between',
-        marginLeft: 15,
-        marginTop: 8,
-        marginBottom: 8,
-
-        // backgroundColor: 'red',
     },
 
     descricao: {
         fontSize: 17,
-        lineHeight: 15,
         color: '#000000',
     },
 

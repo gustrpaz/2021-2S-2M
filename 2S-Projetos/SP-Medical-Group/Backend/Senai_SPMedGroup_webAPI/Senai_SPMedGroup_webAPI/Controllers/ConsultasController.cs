@@ -227,8 +227,6 @@ namespace Senai_SPMedGroup_webAPI.Controllers
             }
           
         }
-
-
         /// <summary>
         /// Função para listar as consultas de um médico
         /// </summary>
@@ -291,6 +289,27 @@ namespace Senai_SPMedGroup_webAPI.Controllers
 
                 return BadRequest(ex.Message);
             }
+        }
+
+        [Authorize(Roles = "1,2,3")]
+        [HttpGet("minhasMobile")]
+        public IActionResult ListarMinhasMobile()
+        {
+            try
+            {
+                int IdUsuario = Convert.ToInt32(HttpContext.User.Claims.First(c => c.Type == JwtRegisteredClaimNames.Jti).Value);
+
+                return Ok(_consultaRepository.ListarMinhasMobile(IdUsuario));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    mensagem = "Não é possível listar as consultas se o usuário não estiver logado!"
+
+                });
+            }
+
         }
 
 
