@@ -149,7 +149,7 @@ namespace Senai_SPMedGroup_webAPI.Controllers
         /// <param name="IdConsulta"></param>
         /// <param name="consultaAtualizada"></param>
         /// <returns></returns>
-        [Authorize(Roles = "2")]
+        [Authorize(Roles = "1")]
         [HttpPatch("{IdConsulta}")]
         public IActionResult SituacaoConsulta(int IdConsulta, Consulta consultaAtualizada)
         {
@@ -301,7 +301,7 @@ namespace Senai_SPMedGroup_webAPI.Controllers
 
                 return Ok(_consultaRepository.ListarMinhasMobile(IdUsuario));
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return BadRequest(new
                 {

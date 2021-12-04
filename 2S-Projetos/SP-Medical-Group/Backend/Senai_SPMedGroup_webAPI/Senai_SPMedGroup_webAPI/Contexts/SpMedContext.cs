@@ -39,10 +39,10 @@ namespace Senai_SPMedGroup_webAPI.Contexts
                 //optionsBuilder.UseSqlServer("Server=tcp:spmedgroup.database.windows.net,1433;Initial Catalog=SPMEDGROUP;Persist Security Info=False;User ID=senai-manha;Password=Spmedgroup@132;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
                 // Banco local (senai)
-                  optionsBuilder.UseSqlServer("Data Source=NOTE0113H1\\SQLEXPRESS; initial catalog=SPMEDGROUP; user Id=sa; pwd=Senai@132;");
+                // optionsBuilder.UseSqlServer("Data Source=NOTE0113H1\\SQLEXPRESS; initial catalog=SPMEDGROUP; user Id=sa; pwd=Senai@132;");
 
                 // Banco local (casa)
-                // optionsBuilder.UseSqlServer("Data Source=DESKTOP-Q4CU27L\\SQLEXPRESS; initial catalog=SPMEDGROUP; user Id=sa; pwd=senai@132;");
+                 optionsBuilder.UseSqlServer("Data Source=DESKTOP-Q4CU27L\\SQLEXPRESS; initial catalog=SPMEDGROUP; user Id=sa; pwd=senai@132;");
 
             }
         }

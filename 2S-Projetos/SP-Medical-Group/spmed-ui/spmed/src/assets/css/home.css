@@ -323,6 +323,7 @@ header {
     background: rgba(255, 255, 255, 0.88);
     border-radius: 11px;
     cursor: pointer;
+    border-style: unset;
 }
 
 .box1 span {
@@ -620,8 +621,236 @@ ul.none {
     color: #FFFFFF;
 }
 
+@media(min-width: 600px) {
+    .container {
+        width: 80vw;
+        margin: 0px;
+    }
+
+    .first_nav {
+        display: none;
+    }
+
+    .logo_site {
+        display: none;
+    }
+
+    .container_header {
+        width: 100%;
+        height: 178.78px;
+        display: flex;
+        align-items: center;
+        background: #008BDA;
+    }
+
+    .menu_header_mobile {
+        width: 461px;
+        height: 178px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu_header {
+        display: none;
+        height: 300px;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: unset;
+        position: absolute;
+        flex-direction: column;
+        padding-left: 10vw;
+        right: 0;
+        top: 128px;
+        background-color: black;
+    }
+
+    .fa, .fas {
+        font-weight: 900;
+        color: white;
+        font-size: 30px;
+        margin-right: 43px;
+    }
+
+    .btn_menu i {
+        display: inline-block;
+        color: white;
+        font-size: 42px;
+    }
+
+    .box_conteudo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box_conteudo h1 {
+        font-size: 70px;
+        line-height: normal;
+
+    }
+
+    .container_banner {
+        width: 100%;
+        height: 720px;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 720px;
+    }
+
+    .container_section {
+        height: 446px;
+    }
+
+    .box_consultas {
+        width: 100%;
+        height: 447px;
+        background: #008BDA;
+        clip-path: none;
+    }
+
+    .box_conteudo_section {
+        height: 315px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box1 {
+        width: 351px;
+        height: 116px;
+    }
+
+    .box2 {
+        width: 351px;
+        height: 116px;
+    }
+
+    .container_especialidades {
+        width: 100%;
+        height: 906px;
+    }
+
+    .container_interno {
+        width: 100%;
+        height: 800px;
+    }
+
+    .box_conteudo_especialidade {
+        width: unset;
+        display: flex;
+        height: unset;
+        flex-direction: column;
+    }
+
+    .box_especialidade {
+        margin-right: 0%;
+        margin-bottom: 10px;
+    }
+
+    .box_especialidade span {
+        font-size: 69px;
+    }
+
+    .caixas_especialidade {
+        width: 348px;
+        height: 96px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .box_VerTodas {
+        width: 128px;
+        height: 30px;
+        margin-right: unset;
+    }
+
+    .img_quemSomos img {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+        height: 388px;
+
+    }
+
+    .container_footer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: rgba(0, 133, 255, 0.43);
+    }
+
+    .box_footer {
+        width: 100%;
+        height: 223px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .links_uteis {
+        display: none;
+    }
+
+    .links_uteis a {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 29px;
+        line-height: 44px;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    ul.none {
+        list-style-type: none;
+    }
+
+    .direitos {
+        width: 371px;
+        height: 97px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .direitos span {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 29px;
+        line-height: 44px;
+        color: #FFFFFF;
+    }
+
+    .Copyright {
+        width: 388px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Copyright span {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 44px;
+        color: #FFFFFF;
+    }
+
+
+}
+
 @media(min-width: 992px) {
-<<<<<<< HEAD
 
 
     .container {
@@ -634,8 +863,6 @@ ul.none {
         height: 178px;
     }
 
-=======
->>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
     header {
         height: 178px;
         width: 100%;
@@ -645,13 +872,10 @@ ul.none {
         background-color: #09ff00;
     }
 
-<<<<<<< HEAD
     .menu_header_mobile {
         display: none;
     }
 
-=======
->>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
     .container_header {
         width: 100%;
         height: 178px;
@@ -660,6 +884,14 @@ ul.none {
         position: relative;
         align-items: center;
         background-color: #FFFFFF;
+    }
+
+    .menu_header{
+        padding-left: unset;
+    }
+
+    .fa, .fas {
+        display: unset;
     }
 
     .first_nav {
@@ -756,11 +988,16 @@ ul.none {
     .menu_header {
         height: 85px;
         width: 1200px;
-        margin-top: 10px;
+        margin-top: 101px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         background-color: #008BDA;
+
+        position: unset;
+        flex-direction: unset;
+        right: unset;
+        top: unset;
     }
 
     .menu_header a {
@@ -793,275 +1030,132 @@ ul.none {
         display: none;
     }
 
-}
-
-@media(min-width: 600px) {
-<<<<<<< HEAD
-
-=======
->>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
-    .container {
-        width: 80vw;
-        margin: 0px;
-    }
-
-    .first_nav {
-        display: none;
-    }
-
-    .logo_site {
-        display: none;
-    }
-
-    .container_header {
-<<<<<<< HEAD
-        width: 100%;
-=======
-        width: 600px;
->>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
-        height: 178.78px;
-        display: flex;
-        align-items: center;
-        background: #008BDA;
-    }
-
-    .menu_header_mobile {
-        width: 461px;
-        height: 178px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .menu_header {
-        display: none;
-        height: 300px;
-        width: 100%;
-        justify-content: space-evenly;
-        align-items: unset;
-        position: absolute;
-        flex-direction: column;
-        padding-left: 10vw;
-        right: 0;
-        top: 128px;
-        background-color: black;
-    }
-
-    .fa, .fas {
-        font-weight: 900;
-        color: white;
-        font-size: 30px;
-        margin-right: 43px;
-    }
-
-    .btn_menu i {
-        display: inline-block;
-        color: white;
-        font-size: 42px;
-    }
-
     .box_conteudo {
-        width: 100%;
+        height: 150px;
+        width: 920px;
+        margin-top: 172px;
+        position: absolute;
+        align-items: center;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        flex-direction: unset;
+
+        /* background-color: aqua;  */
     }
 
     .box_conteudo h1 {
-        font-size: 70px;
-        line-height: normal;
-
+        font-family: 'Bebas Neue';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 98px;
+        line-height: 118px;
+        color: #FFFFFF;
+        text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.3);
     }
 
-    .container_banner {
-        width: 100%;
-        height: 720px;
-    }
-
-    .banner img {
-        width: 100%;
-        height: 720px;
-    }
-
-    .container_section {
-        height: 446px;
-<<<<<<< HEAD
-
-=======
-      
->>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
-    }
 
     .box_consultas {
         width: 100%;
         height: 447px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: #008BDA;
-        clip-path: none;
-<<<<<<< HEAD
-
-=======
-     
->>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
+        clip-path: polygon(100% 0, 100% 78%, 0 100%, 0 16%);
     }
 
     .box_conteudo_section {
-        height: 315px;
+        width: 920px;
+        /* height: 196px; */
         display: flex;
-        flex-direction: column;
-<<<<<<< HEAD
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: unset;
 
-=======
-       
->>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
     }
 
     .box1 {
         width: 351px;
-        height: 116px;
+        height: 175px;
+
+    }
+
+    .box1 span {
+        font-family: 'Bebas Neue';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 71px;
+        line-height: 85px;
+        color: #0085FF;
+    }
+
+
+    .box1 hr {
+        width: 240px;
+        color: #008BDA;
+    }
+
+    .box2 hr {
+        width: 240px;
+        color: #008BDA;
     }
 
     .box2 {
         width: 351px;
-        height: 116px;
+        height: 175px;
     }
 
-<<<<<<< HEAD
     .container_especialidades {
-=======
-    .container_especialidades{
->>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
         width: 100%;
-        height: 906px;
-    }
-
-<<<<<<< HEAD
-    .container_interno {
-=======
-    .container_interno{
->>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
-        width: 100%;
-        height: 800px;
-    }
-
-<<<<<<< HEAD
-    .box_conteudo_especialidade {
-        width: unset;
+        height: 581px;
         display: flex;
-        height: unset;
-        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #E7E7E7;
     }
 
-    .box_especialidade {
-        margin-right: 0%;
+    .box_conteudo_especialidade {
+        width: 1215px;
+        height: 283px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
-    .box_especialidade span {
-        font-size: 69px;
-    }
-
-    .caixas_especialidade {
+    .box_conteudo_especialidade div {
         width: 348px;
         height: 96px;
+        background: linear-gradient(180deg, #FFFFFF 0%, #EBEBEB 69.27%, #C4C4C4 100%);
+        box-shadow: 4px 4px 4px rgba(0, 133, 255, 0.34);
+        border-radius: 10px;
     }
 
-    .box_VerTodas {
-        width: 128px;
-        height: 30px;
-        margin-right:unset;
+    .container_interno {
+        width: 1211px;
+        height: 471px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
     .img_quemSomos img {
-       display: none;
+        display: flex;
     }
 
-    footer {
-        width: 100%;
-        height: 388px;
-       
-    }
-    
-    .container_footer {
-        width: 100%;
-        height: 100%;
+    .links_uteis {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background: rgba(0, 133, 255, 0.43);
     }
-    
+
     .box_footer {
-        width: 100%;
+        width: 1305px;
         height: 223px;
         display: flex;
         align-items: center;
-        flex-direction: column;
+        justify-content: space-between;
+        flex-direction: unset;
     }
-    
-    .links_uteis {
-       display: none;
-    }
-    
-    .links_uteis a {
-        font-family: 'Titillium Web';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 29px;
-        line-height: 44px;
-        text-decoration: none;
-        color: #FFFFFF;
-    }
-    
-    ul.none {
-        list-style-type: none;
-    }
-    
-    .direitos {
-        width: 371px;
-        height: 97px;
-        margin-left: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .direitos span {
-        font-family: 'Titillium Web';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 29px;
-        line-height: 44px;
-        color: #FFFFFF;
-    }
-    
-    .Copyright {
-        width: 388px;
-        height: 75px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .Copyright span {
-        font-family: 'Titillium Web';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 44px;
-        color: #FFFFFF;
-=======
-    .box_conteudo_especialidade{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .box_especialidade{
-        margin-right:0%;
-    }
-    
-    .box_especialidade span{
-        font-size: 69px;
->>>>>>> ed89c00891031483f833d43d3f2028b6622cee55
-    }
-
+   
 
 }
