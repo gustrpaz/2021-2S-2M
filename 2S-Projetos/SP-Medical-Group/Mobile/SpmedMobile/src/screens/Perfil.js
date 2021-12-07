@@ -26,7 +26,6 @@ class Perfil extends Component {
     }
 
 
-
     render() {
         return (
             <View style={styles.pagina}>
@@ -35,10 +34,12 @@ class Perfil extends Component {
                     <Text style={styles.titulo}>Logout</Text>
                 </View>
                 <View style={styles.main}>
-                    <Image
-                        source={require('../assets/logo.png')}
-                        style={styles.Logo}
-                    />
+                    <View style={styles.box_user}>
+                        <Image
+                            source={require('../assets/user-solid.png')}
+                            style={styles.Logo}
+                        />
+                    </View>
                     <View style={styles.boxSair}>
                         <TouchableOpacity
                             title="Logout"
@@ -64,19 +65,17 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     pagTitulo: {
-        width: '40%',
+        width: '30%',
         borderBottomColor: "#FFFFFF",
         borderBottomWidth: 3,
         alignItems: 'center',
-        marginTop: 40
+        marginTop: 50
     },
 
     titulo: {
-        textTransform: 'uppercase',
         color: '#FFFFFF',
-        fontWeight: 'bold',
-        fontFamily: "Bebas Neue",
-        fontSize: 26
+        fontFamily: "BebasNeue-Regular",
+        fontSize: 40
     },
 
     main: {
@@ -85,25 +84,27 @@ const styles = StyleSheet.create({
         width: '100%',
         alignItems: 'center'
     },
+
     Logo: {
-        width: '60%',
-        height: '60%'
+        width: 200,
+        height: 300,
+        marginTop: 10,
     },
-   
+
     boxSair: {
         width: 171,
         height: 51.37,
-        marginTop:60,
+        marginTop: 40,
         backgroundColor: '#FFFFFF',
         borderRadius: 10,
-        alignItems:'center',
-        justifyContent:'center'
+        alignItems: 'center',
+        justifyContent: 'center'
     },
 
     btnText: {
         color: '#009DF5',
-        fontWeight: 'bold',
-        fontSize: 25
+        fontSize: 30,
+        fontFamily: 'TitilliumWeb-Light'
     }
 });
 

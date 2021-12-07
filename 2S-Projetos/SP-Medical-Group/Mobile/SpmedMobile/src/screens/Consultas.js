@@ -113,16 +113,15 @@ const styles = StyleSheet.create({
 
     cardConsulta: {
         width: 384,
-       
         backgroundColor: '#FFFFFF',
         borderRadius: 10,
         marginBottom: 20,
     },
 
     valores:{
-        fontFamily: 'Titillium Web',
+        fontFamily: 'TitilliumWeb-Light',
         fontStyle: 'normal',
-        fontSize: 23,
+        fontSize: 24,
         lineHeight: 35,
         color: '#0085FF',
     },
@@ -131,19 +130,16 @@ const styles = StyleSheet.create({
 
     pagTitulo: {
         width: '40%',
-        height: 40,
         borderBottomColor: "#FFFFFF",
         borderBottomWidth: 3,
-        alignItems: 'center'
+        alignItems: 'center',
     },
 
     titulo: {
-        textTransform: 'uppercase',
         color: '#FFFFFF',
-        fontWeight: 'bold',
-        fontFamily: "Bebas Neue",
-        fontSize: 26,
-
+        fontFamily: "BebasNeue-Regular",
+        fontSize: 40,
+        marginBottom:2,
     },
 
     container_logo: {
@@ -204,7 +200,6 @@ const styles = StyleSheet.create({
     mainHeaderRow: {
         flexDirection: 'row',
     },
-
     // conteúdo do body
     mainBody: {
         flex: 3,
@@ -214,7 +209,7 @@ const styles = StyleSheet.create({
         width: 430,
         paddingTop: 10,
         paddingRight: 10,
-        paddingLeft: 10,
+        paddingLeft: 14,
     },
     // dados do evento de cada item da lista (ou seja, cada linha da lista)
     flatItemRow: {
@@ -222,16 +217,18 @@ const styles = StyleSheet.create({
     },
     flatItemContainer: {
         flex: 1,
+        padding:8
     },
-    flatItemTitle: {
-        lineHeight: 35,
+    flatItemTitle: {     
         marginLeft: 15,
         marginRight:5,
         marginBottom:4,
         marginTop: 4,
-        fontFamily: 'Titillium Web',
+        
+        lineHeight: 35,
+        fontFamily: 'TitilliumWeb-Light',
         fontStyle: 'normal',
-        fontSize: 23,
+        fontSize: 24,
         color: '#022A92',
     },
 

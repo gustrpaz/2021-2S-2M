@@ -45,9 +45,13 @@ namespace Senai_SPMedGroup_webAPI.Repositories
 
         public void Cadastrar(Paciente novoPaciente)
         {
-            // Adiciona um novo Paciente
-            ctx.Pacientes.Add(novoPaciente);
-
+            if (novoPaciente.DataNasc < DateTime.Now)
+            {
+                // Adiciona um novo Paciente
+                ctx.Pacientes.Add(novoPaciente);
+            }
+           
+           
             // Salva as informações que serão gravadas no banco de dados
             ctx.SaveChanges();
         }

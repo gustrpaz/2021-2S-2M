@@ -264,6 +264,7 @@ namespace Senai_SPMedGroup_webAPI.Repositories
                 .Where(x => x.IdPacienteNavigation.IdUsuarioNavigation.IdUsuario == IdUsuario || x.IdMedicoNavigation.IdUsuarioNavigation.IdUsuario == IdUsuario)
                 .Select(x => new Consulta
             {
+                    IdConsulta = x.IdConsulta,
                 IdPaciente = x.IdPaciente,
                 IdMedico = x.IdMedico,
                 IdSituacao = x.IdSituacao,

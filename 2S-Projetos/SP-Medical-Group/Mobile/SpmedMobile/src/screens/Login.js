@@ -18,19 +18,14 @@ export default class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: '',
-      senha: '',
+      email: 'helena.souza@spmedicalgroup.com.br',
+      senha: '111',
     };
   }
   //como vamos trabalhar com assync storage,
   //nossa funcao tem que ser async.
   realizarLogin = async () => {
-    //nao temos mais  console log.
-    //vamos utilizar console.warn.
-
-    //apenas para teste.
-    // console.warn(this.state.email + ' ' + this.state.senha);
-
+    
     const resposta = await api.post('/login', {
       email: this.state.email,
       senha: this.state.senha,
@@ -40,13 +35,9 @@ export default class Login extends Component {
     const token = resposta.data.token;
     await AsyncStorage.setItem('userToken', token);
 
-    //agora sim podemos descomentar.
     if (resposta.status == 200) {
       this.props.navigation.navigate('Main');
-      console.warn("LOGOUUU!!!");
     }
-
-    console.warn(token);
 
   };
 
@@ -99,6 +90,7 @@ const styles = StyleSheet.create({
     TituloLogin: {
       color: '#009DF5',
       fontSize: 37,
+      fontFamily: 'BebasNeue-Regular',
     },
   
 

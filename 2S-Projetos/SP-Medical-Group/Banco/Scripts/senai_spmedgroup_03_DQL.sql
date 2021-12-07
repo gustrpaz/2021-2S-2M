@@ -85,7 +85,7 @@ RETURN
 
 
 -- Stored Procedurew para retornar o tempo que falta para a consulta
-ALTER PROCEDURE TempoRestante
+CREATE PROCEDURE TempoRestante
 @Nome VARCHAR(30)
     AS
  BEGIN

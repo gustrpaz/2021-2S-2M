@@ -12,6 +12,9 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		51EF3106EADC4113B697E439 /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1515780A7A174BF49F01144B /* BebasNeue-Regular.ttf */; };
+		32CCED1F83F84A999AA8E470 /* TitilliumWeb-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C6288298E1E49629DA82517 /* TitilliumWeb-Light.ttf */; };
+		B72446FC52AD41E0A0BE95BA /* TitilliumWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26E43638EC8A4DA383C7401B /* TitilliumWeb-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = spmedMobile/main.m; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = spmedMobile/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		1515780A7A174BF49F01144B /* BebasNeue-Regular.ttf */ = {isa = PBXFileReference; name = "BebasNeue-Regular.ttf"; path = "../assets/fonts/BebasNeue-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1C6288298E1E49629DA82517 /* TitilliumWeb-Light.ttf */ = {isa = PBXFileReference; name = "TitilliumWeb-Light.ttf"; path = "../assets/fonts/TitilliumWeb-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		26E43638EC8A4DA383C7401B /* TitilliumWeb-Regular.ttf */ = {isa = PBXFileReference; name = "TitilliumWeb-Regular.ttf"; path = "../assets/fonts/TitilliumWeb-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 				00E356EF1AD99517003FC87E /* spmedMobileTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				A5EFAF1449B346858369B1A1 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -123,6 +130,17 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		A5EFAF1449B346858369B1A1 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				1515780A7A174BF49F01144B /* BebasNeue-Regular.ttf */,
+				1C6288298E1E49629DA82517 /* TitilliumWeb-Light.ttf */,
+				26E43638EC8A4DA383C7401B /* TitilliumWeb-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -214,6 +232,9 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				51EF3106EADC4113B697E439 /* BebasNeue-Regular.ttf in Resources */,
+				32CCED1F83F84A999AA8E470 /* TitilliumWeb-Light.ttf in Resources */,
+				B72446FC52AD41E0A0BE95BA /* TitilliumWeb-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
