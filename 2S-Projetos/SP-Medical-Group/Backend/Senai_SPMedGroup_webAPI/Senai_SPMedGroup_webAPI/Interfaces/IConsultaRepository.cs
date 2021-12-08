@@ -1,4 +1,5 @@
 ﻿using Senai_SPMedGroup_webAPI.Domains;
+using Senai_SPMedGroup_webAPI.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -63,6 +64,7 @@ namespace Senai_SPMedGroup_webAPI.Interfaces
         void SituacaoConsulta(int IdConsulta, Consulta consultaAtualizada);
 
         void AlterarDescricao(string descricao, int IdUsuario);
+
 
         List<Consulta>ListarMinhasMobile(int IdUsuario);    
     }

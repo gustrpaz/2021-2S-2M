@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Senai_SPMedGroup_webAPI.Domains;
 using Senai_SPMedGroup_webAPI.Interfaces;
 using Senai_SPMedGroup_webAPI.Repositories;
+using Senai_SPMedGroup_webAPI.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -94,13 +95,20 @@ namespace Senai_SPMedGroup_webAPI.Controllers
         /// <returns>Um status code 201 - Created</returns>
         [Authorize(Roles = "1")]
         [HttpPost]
-        public IActionResult Cadastrar(Consulta novaConsulta)
+        public IActionResult Cadastrar(ConsultaViewModel novaConsulta)
         {
             try
             {
-                // Faz a chamada para o método .Cadastrar enviando as informações de cadastro
-                _consultaRepository.Cadastrar(novaConsulta);
-                // Retorna um status code 201
+                Consulta newConsulta = new Consulta();
+
+                newConsulta.IdPaciente = novaConsulta.IdPaciente;
+                newConsulta.IdMedico = novaConsulta.IdMedico;
+                newConsulta.IdSituacao = novaConsulta.IdSituacao;
+                newConsulta.DataHora = novaConsulta.DataHora;
+                newConsulta.Descricao = novaConsulta.Descricao;
+
+                _consultaRepository.Cadastrar(newConsulta);
+
                 return StatusCode(201);
             }
             catch (Exception erro)

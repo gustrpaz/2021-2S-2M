@@ -1,6 +1,7 @@
 ﻿using Senai_SPMedGroup_webAPI.Contexts;
 using Senai_SPMedGroup_webAPI.Domains;
 using Senai_SPMedGroup_webAPI.Interfaces;
+using Senai_SPMedGroup_webAPI.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;

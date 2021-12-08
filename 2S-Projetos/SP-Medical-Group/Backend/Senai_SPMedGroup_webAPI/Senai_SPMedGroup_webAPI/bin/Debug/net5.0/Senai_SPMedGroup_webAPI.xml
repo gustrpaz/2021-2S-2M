@@ -78,7 +78,7 @@
             <returns> Uma consulta encontrada com o status code 200 - Ok</returns>
             
         </member>
-        <member name="M:Senai_SPMedGroup_webAPI.Controllers.ConsultasController.Cadastrar(Senai_SPMedGroup_webAPI.Domains.Consulta)">
+        <member name="M:Senai_SPMedGroup_webAPI.Controllers.ConsultasController.Cadastrar(Senai_SPMedGroup_webAPI.ViewModels.ConsultaViewModel)">
             <summary>
             Cadastra uma Consulta
             </summary>

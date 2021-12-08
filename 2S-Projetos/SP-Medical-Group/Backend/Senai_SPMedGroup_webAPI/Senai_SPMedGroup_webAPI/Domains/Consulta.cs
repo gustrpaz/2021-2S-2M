@@ -11,11 +11,11 @@ namespace Senai_SPMedGroup_webAPI.Domains
         public int IdConsulta { get; set; }
         public int? IdPaciente { get; set; }
 
-        [Required(ErrorMessage = "É necessário que seja passado um idMedico da consulta!")]
+     
         public int? IdMedico { get; set; }
         public int? IdSituacao { get; set; }
 
-        [Required(ErrorMessage = "A data e hora são obrigatórias!")]
+        
         public DateTime DataHora { get; set; }
         public string Descricao { get; set; }
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\46849723804\\Desktop\\Roman\\Backend\\senai_roman_webAPI\\senai_roman_webAPI\\senai_roman_webAPI.csproj": {}
+    "C:\\Users\\46849723804\\Desktop\\2021-2S-2M\\2M-sprint5-mobile\\Roman\\Backend\\senai_roman_webAPI\\senai_roman_webAPI\\senai_roman_webAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\46849723804\\Desktop\\Roman\\Backend\\senai_roman_webAPI\\senai_roman_webAPI\\senai_roman_webAPI.csproj": {
+    "C:\\Users\\46849723804\\Desktop\\2021-2S-2M\\2M-sprint5-mobile\\Roman\\Backend\\senai_roman_webAPI\\senai_roman_webAPI\\senai_roman_webAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\46849723804\\Desktop\\Roman\\Backend\\senai_roman_webAPI\\senai_roman_webAPI\\senai_roman_webAPI.csproj",
+        "projectUniqueName": "C:\\Users\\46849723804\\Desktop\\2021-2S-2M\\2M-sprint5-mobile\\Roman\\Backend\\senai_roman_webAPI\\senai_roman_webAPI\\senai_roman_webAPI.csproj",
         "projectName": "senai_roman_webAPI",
-        "projectPath": "C:\\Users\\46849723804\\Desktop\\Roman\\Backend\\senai_roman_webAPI\\senai_roman_webAPI\\senai_roman_webAPI.csproj",
+        "projectPath": "C:\\Users\\46849723804\\Desktop\\2021-2S-2M\\2M-sprint5-mobile\\Roman\\Backend\\senai_roman_webAPI\\senai_roman_webAPI\\senai_roman_webAPI.csproj",
         "packagesPath": "C:\\Users\\46849723804\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\46849723804\\Desktop\\Roman\\Backend\\senai_roman_webAPI\\senai_roman_webAPI\\obj\\",
+        "outputPath": "C:\\Users\\46849723804\\Desktop\\2021-2S-2M\\2M-sprint5-mobile\\Roman\\Backend\\senai_roman_webAPI\\senai_roman_webAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\46849723804\\AppData\\Roaming\\NuGet\\NuGet.Config",
