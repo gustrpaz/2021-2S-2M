@@ -1,0 +1,22 @@
+1.	Atualize os registros criados no exercício anterior, com os filtros abaixo (não se esqueça de buscar pelo _id):
+Titulo = Titulo Uava
+Descrição = Java Best
+Concluída = verdadeiro
+
+Titulo = Titulo OSharp
+Descrição = CShark
+Concluída = falso
+
+Titulo = Titulo Pirebase
+Descrição = Fireb4se
+
+Titulo = Titulo YMicrosoft
+Descrição = MicroSOFT
+
+Titulo = Titulo Roracle
+Descrição = Oracle Inc.
+Data de Inclusão = data de hoje
+
+db.customers.updateOne({_id: ObjectId("59ab46e433959e2724be2cbd")}, {$set: {idade: 28} })
+
+ db.materias.update({"_id":ObjectId("61b20d064996898ada1217fd"}, {$set:{Titulo:Titulo Uava}})

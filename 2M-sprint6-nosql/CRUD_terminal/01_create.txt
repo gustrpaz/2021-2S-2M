@@ -1,0 +1,64 @@
+1.	Defina o uso do banco de dados "cursos"
+
+  Resposta: use cursos
+
+2.	Crie uma collection para armazenar as "matérias"
+
+  Resposta: db.createCollection("materias")
+
+3.	Insira 5 novos registros conforme descrições abaixo:
+
+Titulo = Titulo U
+Descrição = Java
+Concluída = verdadeiro
+
+Titulo = Titulo O
+Descrição = CSharp
+Concluída = falso
+
+Titulo = Titulo P
+Descrição = Firebase
+
+Titulo = Titulo Y
+Descrição = Microsoft
+
+Titulo = Titulo R
+Descrição = Oracle
+Data de Inclusão = data de hoje
+
+
+Resposta:
+
+db.materias.insertMany([{"Titulo":"Titulo U","Descrição":"Java","Concluída":true},{"Titulo":"Titulo O","Descrição":"CSharp","Concluída":false},
+{"Titulo":"Titulo P","Descrição":"Firebase"},{"Titulo":"Titulo Y","Descrição":"Microsoft"},
+{"Titulo":"Titulo R","Descrição":"Oracle","DtaInclusao":"09/12/2021"}])
+
+db.materias.find().pretty()
+{
+        "_id" : ObjectId("61b20d064996898ada1217fd"),
+        "Titulo" : "Titulo U",
+        "Descrição" : "Java",
+        "Concluída" : true
+}
+{
+        "_id" : ObjectId("61b20d064996898ada1217fe"),
+        "Titulo" : "Titulo O",
+        "Descrição" : "CSharp",
+        "Concluída" : false
+}
+{
+        "_id" : ObjectId("61b20d064996898ada1217ff"),
+        "Titulo" : "Titulo P",
+        "Descrição" : "Firebase"
+}
+{
+        "_id" : ObjectId("61b20d064996898ada121800"),
+        "Titulo" : "Titulo Y",
+        "Descrição" : "Microsoft"
+}
+{
+        "_id" : ObjectId("61b20d064996898ada121801"),
+        "Titulo" : "Titulo R",
+        "Descrição" : "Oracle",
+        "DtaInclusao" : "09/12/2021"
+}
