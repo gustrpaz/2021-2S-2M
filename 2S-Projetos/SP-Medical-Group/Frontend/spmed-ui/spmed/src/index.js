@@ -75,9 +75,6 @@ const routing = (
         <PermissaoAdm path="/cadastroConsulta" component={CadastroConsulta} /> {/* Cadastrar consulta */}
         <Redirect to="/notFound" /> {/* Redireciona para Not Found caso não encontre nenhuma rota */}
         <Route path="/notFound" component={NotFound} /> {/* Not Found */}
-
-
-       
       </Switch>
     </div>
   </Router>

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -207,10 +208,104 @@ header {
 /*  */
 
 
-.bodyLocalizacao{
+.bodyLocalizacao {
     height: 1200px;
     width: 100%;
+    margin-top: 90px;
     display: flex;
-    margin-top: 192px;
+    align-items: center;
+    justify-content: center;
     background-color: #C9C9C9;
+}
+
+.mapa {
+    height: 800px;
+    width: 1200px;
+    display: flex;
+    background-color: brown;
+}
+
+/* Footer  */
+/* ------------------------------- */
+
+footer {
+    width: 100%;
+    height: 388px;
+    display: flex;
+    align-items: center;
+    background-image: url('../../assets/img/medicine.png');
+    background-size: cover;
+    background-position: 0px -210px;
+}
+
+.container_footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 133, 255, 0.43);
+}
+
+.box_footer {
+    width: 1305px;
+    height: 223px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links_uteis {
+    width: 157px;
+    height: 90px;
+}
+
+.links_uteis a {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 44px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+ul.none {
+    list-style-type: none;
+}
+
+.direitos {
+    width: 371px;
+    height: 97px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.direitos span {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.Copyright {
+    width: 388px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Copyright span {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 44px;
+    color: #FFFFFF;
 }
