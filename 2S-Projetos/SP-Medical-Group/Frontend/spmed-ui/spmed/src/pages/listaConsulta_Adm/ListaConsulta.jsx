@@ -4,10 +4,7 @@ import { Component } from 'react';
 import Footer from '../../components/footer/footer'
 import Header from '../../components/header/header'
 
-import background_section from '../../assets/img/background section.png'
-
 import "../../assets/css/listaConsulta.css"
-import { render } from '@testing-library/react';
 
 export default class ListaConsulta extends Component {
     constructor(props) {
@@ -16,26 +13,11 @@ export default class ListaConsulta extends Component {
             erroMensagem: '',
             listaConsultas: [],
             idSituacao: 0,
+            idConsultaAlterada: 0,
             listaSituacao: [],
             isLoading: false
         }
     }
-
-    buscarSituacao = () => {
-        axios('https://localhost:5001/api/situacoes', {
-            headers: {
-                Authorization: 'Bearer ' + localStorage.getItem('usuario-login')
-            }
-        }).then(resposta => {
-            if (resposta.status === 200) {
-                this.setState({ listaSituacao: resposta.data })
-            }
-        }).catch((erro) => console.log(erro))
-    }
-
-    atualizaStateCampo = (campo) => {
-        this.setState({ [campo.target.name]: campo.target.value });
-    };
 
     buscarConsultas = () => {
         console.log('salve agora vamos fazer a chamada para a api.');
@@ -69,6 +51,46 @@ export default class ListaConsulta extends Component {
             .catch((erro) => console.log(erro));
     };
 
+    alterarSituacao = (consulta) => {
+        console.log(consulta.idConsulta)
+        axios.patch('https://localhost:5001/api/consultas/' + consulta.idConsulta, {
+              idSituacao : this.state.idSituacao 
+        },{
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem('usuario-login')
+            }
+        })
+        .then(response => {
+            if (response.status === 200) {
+                console.log('Situação alterada')
+            }
+        })
+        .catch(erro => console.log(erro))
+   
+    }
+
+    buscarSituacao = () => {
+        axios('https://localhost:5001/api/situacoes', {
+            headers: {
+                Authorization: 'Bearer ' + localStorage.getItem('usuario-login')
+            }
+        }).then(resposta => {
+            if (resposta.status === 200) {
+                this.setState({ listaSituacao: resposta.data })
+            }
+        }).catch((erro) => console.log(erro))
+    }
+
+    atualizaStateCampo = (campo) => {
+        this.setState({ [campo.target.name]: campo.target.value });
+    };
+
+    atualizaStateTudo = (campo) => {
+        this.setState({ [campo.target.name]: campo.target.value });
+        this.alterarSituacao()
+    };
+
+
     componentDidMount() {
         this.buscarConsultas();
         this.buscarSituacao();
@@ -97,8 +119,8 @@ export default class ListaConsulta extends Component {
                                     <div className="box_consultas_Lista">
                                         <div className="info_consulta_Lista">
                                             <div>
-                                                {/* <span>Data da consulta: {consulta.dataHora} </span> */}
-
+                                                <span>Data da consulta: {consulta.idConsulta} </span>
+                                                 
                                                 <span>Data da consulta:{Intl.DateTimeFormat("pt-BR", {
                                                     year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric"
                                                 }).format(new Date(consulta.dataHora))}</span>
@@ -107,7 +129,9 @@ export default class ListaConsulta extends Component {
                                                 <span>Médico: {consulta.idMedicoNavigation.nomeMedico} </span>
                                                 <span>Situação: {consulta.idSituacaoNavigation.situacao1} </span>
                                                 <span>Clínica: {consulta.idMedicoNavigation.idClinicaNavigation.nomeClinica} </span>
-                                                <select className="input_situacao" name="idSituacao" value={this.state.idSituacao} onChange={this.atualizaStateCampo}>
+
+                                                <select className="input_situacao" name="idSituacao" value={this.state.idSituacao}  onChange={this.atualizaStateCampo}>     
+                                                {/* onClick={() => this.alterarSituacao(consulta)} */}
                                                     <option value="0" selected disabled>
                                                         Selecione a Situação
                                                     </option>
@@ -120,6 +144,9 @@ export default class ListaConsulta extends Component {
                                                         );
                                                     })}
                                                 </select>
+
+                                                <button  onClick={() => this.alterarSituacao(consulta)} onChange={this.atualizaStateTudo}>Salvar alterações</button>
+                                               
                                             </div>
                                         </div>
 
