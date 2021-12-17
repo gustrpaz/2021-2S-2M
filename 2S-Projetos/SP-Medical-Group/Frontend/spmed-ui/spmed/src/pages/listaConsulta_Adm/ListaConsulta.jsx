@@ -61,12 +61,13 @@ export default class ListaConsulta extends Component {
             }
         })
             .then(response => {
-                if (response.status === 200) {
-                    console.log('Situação alterada')
+                if (response.status === 204) {
+                    console.log('Situação alterada');
+                    this.buscarConsultas();
                 }
             })
             .catch(erro => console.log(erro))
-
+        
     }
 
     buscarSituacao = () => {
@@ -85,10 +86,12 @@ export default class ListaConsulta extends Component {
         this.setState({ [campo.target.name]: campo.target.value });
     };
 
-    atualizaStateTudo = (campo) => {
-        this.setState({ [campo.target.name]: campo.target.value });
-        this.alterarSituacao()
-    };
+    // atualizaStateTudo = (campo) => {
+    //     console.log("akiiii");
+    //     this.setState({ [campo.target.name]: campo.target.value });
+    //     this.alterarSituacao();
+        
+    // };
 
 
     componentDidMount() {
@@ -143,7 +146,7 @@ export default class ListaConsulta extends Component {
                                                 </select>
 
                                                 <div className='boxSalvar'>
-                                                    <button className="BtnSalvar" onClick={() => this.alterarSituacao(consulta)} onChange={this.atualizaStateTudo}>Salvar</button>
+                                                    <button className="BtnSalvar" onClick={() => this.alterarSituacao(consulta)}>Salvar</button>
                                                 </div>
 
                                             </div>
