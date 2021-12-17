@@ -51,6 +51,7 @@ insert into situacao (situacao)
 values ('Aguardando');
 GO
 
+
 INSERT INTO especialidades (especialidades)
 VALUES ('Acupuntura'),('Anestesiologia'),('Angiologia'),('Cardiologia'),('Cirurgia Cardiovascular'),
        ('Cirurgia da M�o'),('Cirurgia do Aparelho Digestivo'),('Cirurgia Geral'),('Cirurgia Pedi�trica'),

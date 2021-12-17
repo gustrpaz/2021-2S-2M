@@ -54,19 +54,19 @@ export default class ListaConsulta extends Component {
     alterarSituacao = (consulta) => {
         console.log(consulta.idConsulta)
         axios.patch('https://localhost:5001/api/consultas/' + consulta.idConsulta, {
-              idSituacao : this.state.idSituacao 
-        },{
+            idSituacao: this.state.idSituacao
+        }, {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('usuario-login')
             }
         })
-        .then(response => {
-            if (response.status === 200) {
-                console.log('Situação alterada')
-            }
-        })
-        .catch(erro => console.log(erro))
-   
+            .then(response => {
+                if (response.status === 200) {
+                    console.log('Situação alterada')
+                }
+            })
+            .catch(erro => console.log(erro))
+
     }
 
     buscarSituacao = () => {
@@ -119,8 +119,6 @@ export default class ListaConsulta extends Component {
                                     <div className="box_consultas_Lista">
                                         <div className="info_consulta_Lista">
                                             <div>
-                                                <span>Data da consulta: {consulta.idConsulta} </span>
-                                                 
                                                 <span>Data da consulta:{Intl.DateTimeFormat("pt-BR", {
                                                     year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric"
                                                 }).format(new Date(consulta.dataHora))}</span>
@@ -130,8 +128,7 @@ export default class ListaConsulta extends Component {
                                                 <span>Situação: {consulta.idSituacaoNavigation.situacao1} </span>
                                                 <span>Clínica: {consulta.idMedicoNavigation.idClinicaNavigation.nomeClinica} </span>
 
-                                                <select className="input_situacao" name="idSituacao" value={this.state.idSituacao}  onChange={this.atualizaStateCampo}>     
-                                                {/* onClick={() => this.alterarSituacao(consulta)} */}
+                                                <select className="input_situacao" name="idSituacao" value={this.state.idSituacao} onChange={this.atualizaStateCampo}>
                                                     <option value="0" selected disabled>
                                                         Selecione a Situação
                                                     </option>
@@ -145,8 +142,10 @@ export default class ListaConsulta extends Component {
                                                     })}
                                                 </select>
 
-                                                <button  onClick={() => this.alterarSituacao(consulta)} onChange={this.atualizaStateTudo}>Salvar alterações</button>
-                                               
+                                                <div className='boxSalvar'>
+                                                    <button className="BtnSalvar" onClick={() => this.alterarSituacao(consulta)} onChange={this.atualizaStateTudo}>Salvar</button>
+                                                </div>
+
                                             </div>
                                         </div>
 
