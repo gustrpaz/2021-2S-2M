@@ -25,7 +25,7 @@ export default class ListaConsulta extends Component {
         //funcao nativa JS, ele é uma API com métodos.
 
         //dentro dos parenteses vamos informar qual é o end point.
-        fetch('http://localhost:5000/api/consultas', {
+        fetch('https://6204f8ac161670001741b12a.mockapi.io/consultas', {
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem('usuario-login'),
             },
@@ -118,6 +118,7 @@ export default class ListaConsulta extends Component {
                             <h1>Todas as consultas</h1>
 
                             {this.state.listaConsultas.map((consulta) => {
+                                console.log(consulta)
                                 return (
                                     <div className="box_consultas_Lista">
                                         <div className="info_consulta_Lista">
@@ -126,12 +127,12 @@ export default class ListaConsulta extends Component {
                                                     year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric"
                                                 }).format(new Date(consulta.dataHora))}</span>
 
-                                                <span>Especialidade: {consulta.idMedicoNavigation.idEspecialidadeNavigation.especialidades} </span>
-                                                <span>Médico: {consulta.idMedicoNavigation.nomeMedico} </span>
-                                                <span>Situação: {consulta.idSituacaoNavigation.situacao1} </span>
-                                                <span>Clínica: {consulta.idMedicoNavigation.idClinicaNavigation.nomeClinica} </span>
+                                              
+                                                <span>Médico: {consulta.idMedicoNavigation[0].nomeMedico} </span>
+                                               
+                                                <span>Paciente: {consulta.idPacienteNavigation[0].nome} </span>
 
-                                                <select className="input_situacao" name="idSituacao" value={this.state.idSituacao} onChange={this.atualizaStateCampo}>
+                                                {/* <select className="input_situacao" name="idSituacao" value={this.state.idSituacao} onChange={this.atualizaStateCampo}>
                                                     <option value="0" selected disabled>
                                                         Selecione a Situação
                                                     </option>
@@ -143,11 +144,11 @@ export default class ListaConsulta extends Component {
                                                             </option>
                                                         );
                                                     })}
-                                                </select>
+                                                </select> */}
 
-                                                <div className='boxSalvar'>
+                                                {/* <div className='boxSalvar'>
                                                     <button className="BtnSalvar" onClick={() => this.alterarSituacao(consulta)}>Salvar</button>
-                                                </div>
+                                                </div> */}
 
                                             </div>
                                         </div>

@@ -12,7 +12,7 @@ import {
 } from 'react-router-dom';
 
 import Home from './pages/home/Home';
-import Login from './pages/login/login'
+// import Login from './pages/login/login'
 import ListaConsulta from './pages/listaConsulta_Adm/ListaConsulta'
 import CadastroConsulta from './pages/cadastroConsulta/cadastroConsulta';
 import NotFound from './pages/notFound/notFound'
@@ -22,44 +22,44 @@ import Especialidade from './pages/especialidades/especialidades';
 import Medico from './pages/listaConsultasMed/listaConsultasMed';
 
 
-const PermissaoAdm = ({ component: Component }) => (
-  <Route
-    render={(props) =>
-      usuarioAutenticado() && parseJwt().role === '1' ? (
-        // operador spread
-        <Component {...props} />
-      ) : (
-        <Redirect to="login" />
-      )
-    }
-  />
-);
+// const PermissaoAdm = ({ component: Component }) => (
+//   <Route
+//     render={(props) =>
+//       usuarioAutenticado() && parseJwt().role === '1' ? (
+//         // operador spread
+//         <Component {...props} />
+//       ) : (
+//         <Redirect to="login" />
+//       )
+//     }
+//   />
+// );
 
-const PermissaoMedico = ({ component: Component }) => (
-  <Route
-    render={(props) =>
-      usuarioAutenticado() && parseJwt().role === '2' ? (
-        // operador spread
-        <Component {...props} />
-      ) : (
-        <Redirect to="login" />
-      )
-    }
-  />
-);
+// const PermissaoMedico = ({ component: Component }) => (
+//   <Route
+//     render={(props) =>
+//       usuarioAutenticado() && parseJwt().role === '2' ? (
+//         // operador spread
+//         <Component {...props} />
+//       ) : (
+//         <Redirect to="login" />
+//       )
+//     }
+//   />
+// );
 
-const PermissaoPaciente = ({ component: Component }) => (
-  <Route
-    render={(props) =>
-      usuarioAutenticado() && parseJwt().role === '3' ? (
-        // operador spread
-        <Component {...props} />
-      ) : (
-        <Redirect to="login" />
-      )
-    }
-  />
-);
+// const PermissaoPaciente = ({ component: Component }) => (
+//   <Route
+//     render={(props) =>
+//       usuarioAutenticado() && parseJwt().role === '3' ? (
+//         // operador spread
+//         <Component {...props} />
+//       ) : (
+//         <Redirect to="login" />
+//       )
+//     }
+//   />
+// );
 
 
 const routing = (
@@ -67,12 +67,12 @@ const routing = (
     <div>
       <Switch>
         <Route exact path="/" component={Home} /> {/* Home */}
-        <Route path="/login" component={Login} /> {/* Login */}
+        {/* <Route path="/login" component={Login} /> Login */}
         <Route path="/especialidade" component={Especialidade} /> {/* Especialidade */}
-        <PermissaoAdm path="/listaConsulta" component={ListaConsulta} />  {/* Listar Consulta */}
-        <PermissaoMedico path="/listaConsultasMed" component={Medico} /> {/* Listar Consultas Médicos */}
-        <PermissaoPaciente path="/listaConsultaPac" component={ListaConsultaPac} /> {/* Listar Consultas paciente */}
-        <PermissaoAdm path="/cadastroConsulta" component={CadastroConsulta} /> {/* Cadastrar consulta */}
+        <Route path="/listaConsulta" component={ListaConsulta} />  {/* Listar Consulta */}
+        <Route path="/listaConsultasMed" component={Medico} /> {/* Listar Consultas Médicos */}
+        <Route path="/listaConsultaPac" component={ListaConsultaPac} /> {/* Listar Consultas paciente */}
+        <Route path="/cadastroConsulta" component={CadastroConsulta} /> {/* Cadastrar consulta */}
         <Redirect to="/notFound" /> {/* Redireciona para Not Found caso não encontre nenhuma rota */}
         <Route path="/notFound" component={NotFound} /> {/* Not Found */}
       </Switch>
